@@ -19,27 +19,36 @@ namespace Sale_Price_Calculator
 
         private void calculateSalePriceButton_Click(object sender, EventArgs e)
         {
-            //Variables declarations
-            decimal original_price; //Holds the item's original price
-            decimal discount_percentage;//Holds the item's original price
-            decimal discount_amount;// Holds the amount of discount
-            decimal sale_price;//Holds the item's sale price
+            try
+            {
+                //Variables declarations
+                decimal original_price; //Holds the item's original price
+                decimal discount_percentage;//Holds the item's original price
+                decimal discount_amount;// Holds the amount of discount
+                decimal sale_price;//Holds the item's sale price
 
-            //Get the item original price
-            original_price = decimal.Parse(originalPriceTextBox.Text);
+                //Get the item original price
+                original_price = decimal.Parse(originalPriceTextBox.Text);
 
-            //Get the item discount percentage
-            discount_percentage = decimal.Parse(percentageDiscountTextBox.Text);
-            discount_percentage = (discount_percentage / 100);
+                //Get the item discount percentage
+                discount_percentage = decimal.Parse(percentageDiscountTextBox.Text);
+                discount_percentage = (discount_percentage / 100);
 
-            //compute the discount amount
-            discount_amount = original_price * discount_percentage;
+                //compute the discount amount
+                discount_amount = original_price * discount_percentage;
 
-            //Calculate the sale price
-            sale_price = original_price - discount_amount;
+                //Calculate the sale price
+                sale_price = original_price - discount_amount;
 
-            //Display the price to the sales price textbox
-            salesPriceTextBox.Text = sale_price.ToString("C");
+                //Display the price to the sales price textbox
+                salesPriceTextBox.Text = sale_price.ToString("C");
+
+            }
+            catch (Exception msg)
+            {
+                MessageBox.Show(msg.Message);
+                
+            }
 
         }
 
