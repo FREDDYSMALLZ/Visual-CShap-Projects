@@ -1,0 +1,12 @@
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\My Customer Database\My Customer Database\bin\Debug\myCustomerDB.mdf
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\My Customer Database\My Customer Database\bin\Debug\myCustomerDB_log.ldf
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\My Customer Database\My Customer Database\bin\Debug\My Customer Database.exe.config
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\My Customer Database\My Customer Database\bin\Debug\My Customer Database.exe
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\My Customer Database\My Customer Database\bin\Debug\My Customer Database.pdb
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\My Customer Database\My Customer Database\obj\Debug\My Customer Database.csprojResolveAssemblyReference.cache
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\My Customer Database\My Customer Database\obj\Debug\My_Customer_Database.CustomerDb.resources
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\My Customer Database\My Customer Database\obj\Debug\My_Customer_Database.Properties.Resources.resources
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\My Customer Database\My Customer Database\obj\Debug\My Customer Database.csproj.GenerateResource.Cache
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\My Customer Database\My Customer Database\obj\Debug\My Customer Database.csproj.CoreCompileInputs.cache
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\My Customer Database\My Customer Database\obj\Debug\My Customer Database.exe
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\My Customer Database\My Customer Database\obj\Debug\My Customer Database.pdb

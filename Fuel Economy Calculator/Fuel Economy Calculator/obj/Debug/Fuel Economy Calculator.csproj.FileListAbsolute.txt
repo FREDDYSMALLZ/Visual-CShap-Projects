@@ -1,0 +1,10 @@
+C:\Users\FREDDYSMALLZ\source\Repos\Fuel Economy Calculator\Fuel Economy Calculator\bin\Debug\Fuel Economy Calculator.exe.config
+C:\Users\FREDDYSMALLZ\source\Repos\Fuel Economy Calculator\Fuel Economy Calculator\bin\Debug\Fuel Economy Calculator.exe
+C:\Users\FREDDYSMALLZ\source\Repos\Fuel Economy Calculator\Fuel Economy Calculator\bin\Debug\Fuel Economy Calculator.pdb
+C:\Users\FREDDYSMALLZ\source\Repos\Fuel Economy Calculator\Fuel Economy Calculator\obj\Debug\Fuel Economy Calculator.csprojResolveAssemblyReference.cache
+C:\Users\FREDDYSMALLZ\source\Repos\Fuel Economy Calculator\Fuel Economy Calculator\obj\Debug\Fuel_Economy_Calculator.FuelEconomyCalculatir.resources
+C:\Users\FREDDYSMALLZ\source\Repos\Fuel Economy Calculator\Fuel Economy Calculator\obj\Debug\Fuel_Economy_Calculator.Properties.Resources.resources
+C:\Users\FREDDYSMALLZ\source\Repos\Fuel Economy Calculator\Fuel Economy Calculator\obj\Debug\Fuel Economy Calculator.csproj.GenerateResource.Cache
+C:\Users\FREDDYSMALLZ\source\Repos\Fuel Economy Calculator\Fuel Economy Calculator\obj\Debug\Fuel Economy Calculator.csproj.CoreCompileInputs.cache
+C:\Users\FREDDYSMALLZ\source\Repos\Fuel Economy Calculator\Fuel Economy Calculator\obj\Debug\Fuel Economy Calculator.exe
+C:\Users\FREDDYSMALLZ\source\Repos\Fuel Economy Calculator\Fuel Economy Calculator\obj\Debug\Fuel Economy Calculator.pdb

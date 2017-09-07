@@ -1,0 +1,10 @@
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\Birth Date Application String\Birth Date Application String\bin\Debug\Birth Date Application String.exe.config
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\Birth Date Application String\Birth Date Application String\bin\Debug\Birth Date Application String.exe
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\Birth Date Application String\Birth Date Application String\bin\Debug\Birth Date Application String.pdb
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\Birth Date Application String\Birth Date Application String\obj\Debug\Birth Date Application String.csprojResolveAssemblyReference.cache
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\Birth Date Application String\Birth Date Application String\obj\Debug\Birth_Date_Application_String.DateBirthString.resources
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\Birth Date Application String\Birth Date Application String\obj\Debug\Birth_Date_Application_String.Properties.Resources.resources
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\Birth Date Application String\Birth Date Application String\obj\Debug\Birth Date Application String.csproj.GenerateResource.Cache
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\Birth Date Application String\Birth Date Application String\obj\Debug\Birth Date Application String.csproj.CoreCompileInputs.cache
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\Birth Date Application String\Birth Date Application String\obj\Debug\Birth Date Application String.exe
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\Birth Date Application String\Birth Date Application String\obj\Debug\Birth Date Application String.pdb

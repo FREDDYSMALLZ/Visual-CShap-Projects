@@ -1,0 +1,10 @@
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\String Variable Demo\String Variable Demo\bin\Debug\String Variable Demo.exe.config
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\String Variable Demo\String Variable Demo\bin\Debug\String Variable Demo.exe
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\String Variable Demo\String Variable Demo\bin\Debug\String Variable Demo.pdb
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\String Variable Demo\String Variable Demo\obj\Debug\String Variable Demo.csprojResolveAssemblyReference.cache
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\String Variable Demo\String Variable Demo\obj\Debug\String_Variable_Demo.String_Demo.resources
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\String Variable Demo\String Variable Demo\obj\Debug\String_Variable_Demo.Properties.Resources.resources
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\String Variable Demo\String Variable Demo\obj\Debug\String Variable Demo.csproj.GenerateResource.Cache
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\String Variable Demo\String Variable Demo\obj\Debug\String Variable Demo.csproj.CoreCompileInputs.cache
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\String Variable Demo\String Variable Demo\obj\Debug\String Variable Demo.exe
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\String Variable Demo\String Variable Demo\obj\Debug\String Variable Demo.pdb

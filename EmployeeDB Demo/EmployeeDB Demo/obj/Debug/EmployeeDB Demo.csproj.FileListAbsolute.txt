@@ -1,0 +1,11 @@
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\EmployeeDB Demo\EmployeeDB Demo\bin\Debug\EmployeeDB.accdb
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\EmployeeDB Demo\EmployeeDB Demo\bin\Debug\EmployeeDB Demo.exe.config
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\EmployeeDB Demo\EmployeeDB Demo\bin\Debug\EmployeeDB Demo.exe
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\EmployeeDB Demo\EmployeeDB Demo\bin\Debug\EmployeeDB Demo.pdb
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\EmployeeDB Demo\EmployeeDB Demo\obj\Debug\EmployeeDB Demo.csprojResolveAssemblyReference.cache
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\EmployeeDB Demo\EmployeeDB Demo\obj\Debug\EmployeeDB_Demo.Form1.resources
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\EmployeeDB Demo\EmployeeDB Demo\obj\Debug\EmployeeDB_Demo.Properties.Resources.resources
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\EmployeeDB Demo\EmployeeDB Demo\obj\Debug\EmployeeDB Demo.csproj.GenerateResource.Cache
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\EmployeeDB Demo\EmployeeDB Demo\obj\Debug\EmployeeDB Demo.csproj.CoreCompileInputs.cache
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\EmployeeDB Demo\EmployeeDB Demo\obj\Debug\EmployeeDB Demo.exe
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\EmployeeDB Demo\EmployeeDB Demo\obj\Debug\EmployeeDB Demo.pdb

@@ -1,0 +1,10 @@
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\Test Avaerage Application\Test Avaerage Application\bin\Debug\Test Avaerage Application.exe.config
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\Test Avaerage Application\Test Avaerage Application\bin\Debug\Test Avaerage Application.exe
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\Test Avaerage Application\Test Avaerage Application\bin\Debug\Test Avaerage Application.pdb
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\Test Avaerage Application\Test Avaerage Application\obj\Debug\Test Avaerage Application.csprojResolveAssemblyReference.cache
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\Test Avaerage Application\Test Avaerage Application\obj\Debug\Test_Avaerage_Application.Properties.Resources.resources
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\Test Avaerage Application\Test Avaerage Application\obj\Debug\Test_Avaerage_Application.TestAverage.resources
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\Test Avaerage Application\Test Avaerage Application\obj\Debug\Test Avaerage Application.csproj.GenerateResource.Cache
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\Test Avaerage Application\Test Avaerage Application\obj\Debug\Test Avaerage Application.csproj.CoreCompileInputs.cache
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\Test Avaerage Application\Test Avaerage Application\obj\Debug\Test Avaerage Application.exe
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\Test Avaerage Application\Test Avaerage Application\obj\Debug\Test Avaerage Application.pdb

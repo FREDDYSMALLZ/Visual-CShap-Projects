@@ -1,0 +1,10 @@
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\Change counter Applicatiion\Change counter Applicatiion\bin\Debug\Change counter Applicatiion.exe.config
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\Change counter Applicatiion\Change counter Applicatiion\bin\Debug\Change counter Applicatiion.exe
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\Change counter Applicatiion\Change counter Applicatiion\bin\Debug\Change counter Applicatiion.pdb
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\Change counter Applicatiion\Change counter Applicatiion\obj\Debug\Change counter Applicatiion.csprojResolveAssemblyReference.cache
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\Change counter Applicatiion\Change counter Applicatiion\obj\Debug\Change_counter_Applicatiion.ChangeCounterApplication.resources
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\Change counter Applicatiion\Change counter Applicatiion\obj\Debug\Change_counter_Applicatiion.Properties.Resources.resources
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\Change counter Applicatiion\Change counter Applicatiion\obj\Debug\Change counter Applicatiion.csproj.GenerateResource.Cache
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\Change counter Applicatiion\Change counter Applicatiion\obj\Debug\Change counter Applicatiion.csproj.CoreCompileInputs.cache
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\Change counter Applicatiion\Change counter Applicatiion\obj\Debug\Change counter Applicatiion.exe
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\Change counter Applicatiion\Change counter Applicatiion\obj\Debug\Change counter Applicatiion.pdb
