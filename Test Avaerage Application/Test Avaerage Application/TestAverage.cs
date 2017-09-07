@@ -58,6 +58,9 @@ namespace Test_Avaerage_Application
             test2TextBox.Text = "";
             test3TextBox.Text = "";
             averageTestScoreLabel.Text = "";
+
+            //Reset the focus to test1
+            test1TextBox.Focus();
         }
     }
 }
