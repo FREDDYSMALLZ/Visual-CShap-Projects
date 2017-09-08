@@ -31,19 +31,19 @@
             this.PrincipalAmount = new System.Windows.Forms.Label();
             this.Loan_Time = new System.Windows.Forms.Label();
             this.Interest_Rate = new System.Windows.Forms.Label();
-            this.textBox_AmountBorrowed = new System.Windows.Forms.TextBox();
-            this.textBox_LoanTime = new System.Windows.Forms.TextBox();
-            this.textBox_InterestRate = new System.Windows.Forms.TextBox();
+            this.amountBorrowedTextBox = new System.Windows.Forms.TextBox();
+            this.loanTimeTextBox = new System.Windows.Forms.TextBox();
+            this.interestRateTextBox = new System.Windows.Forms.TextBox();
             this.Clear_Button = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox_TotalAmount = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.TotalAmountLBL = new System.Windows.Forms.Label();
+            this.calculateSIBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // PrincipalAmount
             // 
             this.PrincipalAmount.AutoSize = true;
-            this.PrincipalAmount.Location = new System.Drawing.Point(90, 79);
+            this.PrincipalAmount.Location = new System.Drawing.Point(32, 64);
             this.PrincipalAmount.Name = "PrincipalAmount";
             this.PrincipalAmount.Size = new System.Drawing.Size(163, 22);
             this.PrincipalAmount.TabIndex = 0;
@@ -52,7 +52,7 @@
             // Loan_Time
             // 
             this.Loan_Time.AutoSize = true;
-            this.Loan_Time.Location = new System.Drawing.Point(90, 164);
+            this.Loan_Time.Location = new System.Drawing.Point(32, 149);
             this.Loan_Time.Name = "Loan_Time";
             this.Loan_Time.Size = new System.Drawing.Size(100, 22);
             this.Loan_Time.TabIndex = 1;
@@ -61,91 +61,96 @@
             // Interest_Rate
             // 
             this.Interest_Rate.AutoSize = true;
-            this.Interest_Rate.Location = new System.Drawing.Point(90, 117);
+            this.Interest_Rate.Location = new System.Drawing.Point(32, 102);
             this.Interest_Rate.Name = "Interest_Rate";
             this.Interest_Rate.Size = new System.Drawing.Size(115, 22);
             this.Interest_Rate.TabIndex = 2;
             this.Interest_Rate.Text = "Interest Rate:";
             // 
-            // textBox_AmountBorrowed
+            // amountBorrowedTextBox
             // 
-            this.textBox_AmountBorrowed.Location = new System.Drawing.Point(300, 71);
-            this.textBox_AmountBorrowed.Name = "textBox_AmountBorrowed";
-            this.textBox_AmountBorrowed.Size = new System.Drawing.Size(367, 30);
-            this.textBox_AmountBorrowed.TabIndex = 11;
+            this.amountBorrowedTextBox.Location = new System.Drawing.Point(242, 56);
+            this.amountBorrowedTextBox.Name = "amountBorrowedTextBox";
+            this.amountBorrowedTextBox.Size = new System.Drawing.Size(367, 30);
+            this.amountBorrowedTextBox.TabIndex = 11;
             // 
-            // textBox_LoanTime
+            // loanTimeTextBox
             // 
-            this.textBox_LoanTime.Location = new System.Drawing.Point(300, 164);
-            this.textBox_LoanTime.Name = "textBox_LoanTime";
-            this.textBox_LoanTime.Size = new System.Drawing.Size(367, 30);
-            this.textBox_LoanTime.TabIndex = 4;
+            this.loanTimeTextBox.Location = new System.Drawing.Point(242, 149);
+            this.loanTimeTextBox.Name = "loanTimeTextBox";
+            this.loanTimeTextBox.Size = new System.Drawing.Size(367, 30);
+            this.loanTimeTextBox.TabIndex = 4;
             // 
-            // textBox_InterestRate
+            // interestRateTextBox
             // 
-            this.textBox_InterestRate.Location = new System.Drawing.Point(300, 117);
-            this.textBox_InterestRate.Name = "textBox_InterestRate";
-            this.textBox_InterestRate.Size = new System.Drawing.Size(367, 30);
-            this.textBox_InterestRate.TabIndex = 5;
+            this.interestRateTextBox.Location = new System.Drawing.Point(242, 102);
+            this.interestRateTextBox.Name = "interestRateTextBox";
+            this.interestRateTextBox.Size = new System.Drawing.Size(367, 30);
+            this.interestRateTextBox.TabIndex = 5;
             // 
             // Clear_Button
             // 
-            this.Clear_Button.Location = new System.Drawing.Point(484, 265);
+            this.Clear_Button.BackColor = System.Drawing.Color.Red;
+            this.Clear_Button.Location = new System.Drawing.Point(426, 250);
             this.Clear_Button.Name = "Clear_Button";
             this.Clear_Button.Size = new System.Drawing.Size(183, 51);
             this.Clear_Button.TabIndex = 6;
             this.Clear_Button.Text = "Clear";
-            this.Clear_Button.UseVisualStyleBackColor = true;
+            this.Clear_Button.UseVisualStyleBackColor = false;
             this.Clear_Button.Click += new System.EventHandler(this.Clear_Button_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(90, 214);
+            this.label1.Location = new System.Drawing.Point(32, 199);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(202, 22);
             this.label1.TabIndex = 8;
             this.label1.Text = "Total Amount of Money:";
             // 
-            // textBox_TotalAmount
+            // TotalAmountLBL
             // 
-            this.textBox_TotalAmount.Location = new System.Drawing.Point(300, 214);
-            this.textBox_TotalAmount.Name = "textBox_TotalAmount";
-            this.textBox_TotalAmount.Size = new System.Drawing.Size(367, 30);
-            this.textBox_TotalAmount.TabIndex = 9;
+            this.TotalAmountLBL.BackColor = System.Drawing.Color.White;
+            this.TotalAmountLBL.Location = new System.Drawing.Point(241, 199);
+            this.TotalAmountLBL.Name = "TotalAmountLBL";
+            this.TotalAmountLBL.Size = new System.Drawing.Size(368, 31);
+            this.TotalAmountLBL.TabIndex = 13;
+            this.TotalAmountLBL.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button1
+            // calculateSIBtn
             // 
-            this.button1.Location = new System.Drawing.Point(300, 265);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(178, 51);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.calculateSIBtn.BackColor = System.Drawing.Color.Lime;
+            this.calculateSIBtn.Location = new System.Drawing.Point(242, 250);
+            this.calculateSIBtn.Name = "calculateSIBtn";
+            this.calculateSIBtn.Size = new System.Drawing.Size(183, 51);
+            this.calculateSIBtn.TabIndex = 14;
+            this.calculateSIBtn.Text = "Calculate SI";
+            this.calculateSIBtn.UseVisualStyleBackColor = false;
+            this.calculateSIBtn.Click += new System.EventHandler(this.calculateSIBtn_Click);
             // 
             // Simple_Interest
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(791, 409);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox_TotalAmount);
+            this.ClientSize = new System.Drawing.Size(694, 353);
+            this.Controls.Add(this.calculateSIBtn);
+            this.Controls.Add(this.TotalAmountLBL);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Clear_Button);
-            this.Controls.Add(this.textBox_InterestRate);
-            this.Controls.Add(this.textBox_LoanTime);
-            this.Controls.Add(this.textBox_AmountBorrowed);
+            this.Controls.Add(this.interestRateTextBox);
+            this.Controls.Add(this.loanTimeTextBox);
+            this.Controls.Add(this.amountBorrowedTextBox);
             this.Controls.Add(this.Interest_Rate);
             this.Controls.Add(this.Loan_Time);
             this.Controls.Add(this.PrincipalAmount);
             this.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.MaximumSize = new System.Drawing.Size(716, 409);
             this.Name = "Simple_Interest";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Simple Interest Calculator";
-            this.Load += new System.EventHandler(this.Simple_Interest_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -156,13 +161,13 @@
         private System.Windows.Forms.Label PrincipalAmount;
         private System.Windows.Forms.Label Loan_Time;
         private System.Windows.Forms.Label Interest_Rate;
-        private System.Windows.Forms.TextBox textBox_AmountBorrowed;
-        private System.Windows.Forms.TextBox textBox_LoanTime;
-        private System.Windows.Forms.TextBox textBox_InterestRate;
+        private System.Windows.Forms.TextBox amountBorrowedTextBox;
+        private System.Windows.Forms.TextBox loanTimeTextBox;
+        private System.Windows.Forms.TextBox interestRateTextBox;
         private System.Windows.Forms.Button Clear_Button;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox_TotalAmount;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label TotalAmountLBL;
+        private System.Windows.Forms.Button calculateSIBtn;
     }
 }
 

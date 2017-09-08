@@ -8,3 +8,13 @@ C:\Users\FREDDYSMALLZ\source\Repos\Simple Interest\Simple Interest\obj\Debug\Sim
 C:\Users\FREDDYSMALLZ\source\Repos\Simple Interest\Simple Interest\obj\Debug\Simple Interest.csproj.CoreCompileInputs.cache
 C:\Users\FREDDYSMALLZ\source\Repos\Simple Interest\Simple Interest\obj\Debug\Simple Interest.exe
 C:\Users\FREDDYSMALLZ\source\Repos\Simple Interest\Simple Interest\obj\Debug\Simple Interest.pdb
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\Simple Interest\Simple Interest\bin\Debug\Simple Interest.exe.config
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\Simple Interest\Simple Interest\bin\Debug\Simple Interest.exe
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\Simple Interest\Simple Interest\bin\Debug\Simple Interest.pdb
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\Simple Interest\Simple Interest\obj\Debug\Simple Interest.csprojResolveAssemblyReference.cache
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\Simple Interest\Simple Interest\obj\Debug\Simple_Interest.Simple_Interest.resources
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\Simple Interest\Simple Interest\obj\Debug\Simple_Interest.Properties.Resources.resources
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\Simple Interest\Simple Interest\obj\Debug\Simple Interest.csproj.GenerateResource.Cache
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\Simple Interest\Simple Interest\obj\Debug\Simple Interest.csproj.CoreCompileInputs.cache
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\Simple Interest\Simple Interest\obj\Debug\Simple Interest.exe
+C:\Users\FREDDYSMALLZ\Source\Repos\Visual-CShap-Projects\Simple Interest\Simple Interest\obj\Debug\Simple Interest.pdb

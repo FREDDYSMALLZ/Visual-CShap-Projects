@@ -12,6 +12,11 @@ namespace Simple_Interest
 {
     public partial class Simple_Interest : Form
     {
+        decimal simpleInterest;
+        decimal principal;
+        decimal rate;
+        decimal time;
+        decimal totalAmount;
         public Simple_Interest()
         {
             InitializeComponent();
@@ -21,10 +26,11 @@ namespace Simple_Interest
         {
             try
             {
-                textBox_AmountBorrowed.Clear();
-                textBox_InterestRate.Clear();
-                textBox_InterestRate.Clear();
-                MessageBox.Show("The field is successfully Cleared.");
+                amountBorrowedTextBox.Text = "";
+                interestRateTextBox.Text = "";
+                loanTimeTextBox.Text = "";
+                TotalAmountLBL.Text = "";
+                MessageBox.Show("The fields are successfully Cleared.");
 
             }
             catch (Exception)
@@ -34,17 +40,9 @@ namespace Simple_Interest
             }
         }
 
-        private void Simple_Interest_Load(object sender, EventArgs e)
+        private void calculateSIBtn_Click(object sender, EventArgs e)
         {
-            try
-            {
 
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
         }
     }
 }
