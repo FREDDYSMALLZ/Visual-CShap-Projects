@@ -38,6 +38,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.TotalAmountLBL = new System.Windows.Forms.Label();
             this.calculateSIBtn = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // PrincipalAmount
@@ -90,8 +91,8 @@
             // 
             // Clear_Button
             // 
-            this.Clear_Button.BackColor = System.Drawing.Color.Red;
-            this.Clear_Button.Location = new System.Drawing.Point(426, 250);
+            this.Clear_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.Clear_Button.Location = new System.Drawing.Point(225, 250);
             this.Clear_Button.Name = "Clear_Button";
             this.Clear_Button.Size = new System.Drawing.Size(183, 51);
             this.Clear_Button.TabIndex = 6;
@@ -120,7 +121,7 @@
             // calculateSIBtn
             // 
             this.calculateSIBtn.BackColor = System.Drawing.Color.Lime;
-            this.calculateSIBtn.Location = new System.Drawing.Point(242, 250);
+            this.calculateSIBtn.Location = new System.Drawing.Point(36, 250);
             this.calculateSIBtn.Name = "calculateSIBtn";
             this.calculateSIBtn.Size = new System.Drawing.Size(183, 51);
             this.calculateSIBtn.TabIndex = 14;
@@ -128,12 +129,25 @@
             this.calculateSIBtn.UseVisualStyleBackColor = false;
             this.calculateSIBtn.Click += new System.EventHandler(this.calculateSIBtn_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Location = new System.Drawing.Point(426, 250);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(183, 51);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "Exit";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Simple_Interest
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(694, 353);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.calculateSIBtn);
             this.Controls.Add(this.TotalAmountLBL);
             this.Controls.Add(this.label1);
@@ -168,6 +182,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label TotalAmountLBL;
         private System.Windows.Forms.Button calculateSIBtn;
+        private System.Windows.Forms.Button button1;
     }
 }
 

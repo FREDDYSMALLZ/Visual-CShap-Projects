@@ -32,6 +32,9 @@ namespace Simple_Interest
                 TotalAmountLBL.Text = "";
                 MessageBox.Show("The fields are successfully Cleared.");
 
+                //focus the cursor after clearing the fields
+                amountBorrowedTextBox.Focus();
+
             }
             catch (Exception)
             {
@@ -42,7 +45,32 @@ namespace Simple_Interest
 
         private void calculateSIBtn_Click(object sender, EventArgs e)
         {
+            try
+            {
+                //Get the principal, time and rate
+                principal = decimal.Parse(amountBorrowedTextBox.Text);
+                rate = decimal.Parse(interestRateTextBox.Text);
+                time = decimal.Parse(loanTimeTextBox.Text);
 
+                simpleInterest = principal * rate * time;
+                totalAmount = simpleInterest + principal;
+
+                //Display the results. 
+                TotalAmountLBL.Text = totalAmount.ToString("C");
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //Exits the application
+            this.Close();
+            //
         }
     }
 }
