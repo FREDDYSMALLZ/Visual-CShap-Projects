@@ -29,7 +29,7 @@ namespace Admin_Login
             {
                 this.Hide();
                 Main ss = new Main();
-                ss.Show();
+                ss.Show();      
 
 
             }
