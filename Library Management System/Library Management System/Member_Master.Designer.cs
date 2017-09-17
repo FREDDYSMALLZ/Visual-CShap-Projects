@@ -1,6 +1,6 @@
 ﻿namespace Library_Management_System
 {
-    partial class ChangePassword
+    partial class Member_Master
     {
         /// <summary>
         /// Required designer variable.
@@ -30,13 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // ChangePassword
+            // Member
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(557, 244);
-            this.Name = "ChangePassword";
-            this.Text = "Change Password";
+            this.ClientSize = new System.Drawing.Size(536, 244);
+            this.Name = "Member";
+            this.Text = "Member";
             this.ResumeLayout(false);
 
         }

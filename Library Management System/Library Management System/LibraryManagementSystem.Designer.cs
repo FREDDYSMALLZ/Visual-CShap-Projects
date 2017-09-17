@@ -173,24 +173,28 @@
             this.purchaseToolStripMenuItem.Name = "purchaseToolStripMenuItem";
             this.purchaseToolStripMenuItem.Size = new System.Drawing.Size(323, 36);
             this.purchaseToolStripMenuItem.Text = "Purchase";
+            this.purchaseToolStripMenuItem.Click += new System.EventHandler(this.purchaseToolStripMenuItem_Click);
             // 
             // bookInRegisterToolStripMenuItem
             // 
             this.bookInRegisterToolStripMenuItem.Name = "bookInRegisterToolStripMenuItem";
             this.bookInRegisterToolStripMenuItem.Size = new System.Drawing.Size(323, 36);
             this.bookInRegisterToolStripMenuItem.Text = "Book In Register";
+            this.bookInRegisterToolStripMenuItem.Click += new System.EventHandler(this.bookInRegisterToolStripMenuItem_Click);
             // 
             // bookOutRegisterToolStripMenuItem
             // 
             this.bookOutRegisterToolStripMenuItem.Name = "bookOutRegisterToolStripMenuItem";
             this.bookOutRegisterToolStripMenuItem.Size = new System.Drawing.Size(323, 36);
             this.bookOutRegisterToolStripMenuItem.Text = "Book Out Register";
+            this.bookOutRegisterToolStripMenuItem.Click += new System.EventHandler(this.bookOutRegisterToolStripMenuItem_Click);
             // 
             // mamberTransactionToolStripMenuItem
             // 
             this.mamberTransactionToolStripMenuItem.Name = "mamberTransactionToolStripMenuItem";
             this.mamberTransactionToolStripMenuItem.Size = new System.Drawing.Size(323, 36);
             this.mamberTransactionToolStripMenuItem.Text = "Mamber Transaction";
+            this.mamberTransactionToolStripMenuItem.Click += new System.EventHandler(this.mamberTransactionToolStripMenuItem_Click);
             // 
             // changePasswordToolStripMenuItem
             // 

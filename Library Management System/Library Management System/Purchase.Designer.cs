@@ -1,6 +1,6 @@
 ﻿namespace Library_Management_System
 {
-    partial class Member
+    partial class Purchase
     {
         /// <summary>
         /// Required designer variable.
@@ -28,17 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // Member
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(536, 244);
-            this.Name = "Member";
-            this.Text = "Member";
-            this.ResumeLayout(false);
-
+            this.Text = "Purchase";
         }
 
         #endregion

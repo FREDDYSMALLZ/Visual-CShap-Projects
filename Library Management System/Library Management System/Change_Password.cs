@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Library_Management_System
 {
-    public partial class ChangePassword : Form
+    public partial class Change_Password : Form
     {
-        public ChangePassword()
+        public Change_Password()
         {
             InitializeComponent();
         }
