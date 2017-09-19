@@ -16,5 +16,10 @@ namespace Library_Management_System
         {
             InitializeComponent();
         }
+
+        private void cancelBTN_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

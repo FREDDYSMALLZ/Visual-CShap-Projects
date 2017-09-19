@@ -51,6 +51,8 @@ namespace Library_Management_System
                 else
                 {
                     MessageBox.Show("Invalid Username/Password!. Please Try again.", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    usernameTextBox.Text = "";
+                    passwordTextBox.Text = ""; 
                 }
                 
 

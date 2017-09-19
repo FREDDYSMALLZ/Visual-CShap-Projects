@@ -144,6 +144,9 @@
     <EmbeddedResource Include="Member_Master.resx">
       <DependentUpon>Member_Master.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Plan.resx">
+      <DependentUpon>Plan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Profile_Master.resx">
       <DependentUpon>Profile_Master.cs</DependentUpon>
     </EmbeddedResource>
@@ -158,6 +161,12 @@
     </Compile>
     <EmbeddedResource Include="Role.resx">
       <DependentUpon>Role.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Section.resx">
+      <DependentUpon>Section.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Section_Rack_Map.resx">
+      <DependentUpon>Section_Rack_Map.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
