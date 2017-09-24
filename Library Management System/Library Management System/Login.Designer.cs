@@ -64,6 +64,7 @@
             this.usernameTextBox.Name = "usernameTextBox";
             this.usernameTextBox.Size = new System.Drawing.Size(345, 39);
             this.usernameTextBox.TabIndex = 2;
+            this.usernameTextBox.Text = "FREDDY8393";
             // 
             // passwordTextBox
             // 
@@ -73,6 +74,7 @@
             this.passwordTextBox.PasswordChar = '*';
             this.passwordTextBox.Size = new System.Drawing.Size(345, 39);
             this.passwordTextBox.TabIndex = 3;
+            this.passwordTextBox.Text = "Welcome@123";
             // 
             // linkLabel1
             // 

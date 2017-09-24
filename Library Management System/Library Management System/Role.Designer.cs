@@ -67,17 +67,18 @@
             // 
             // roleLBL
             // 
-            this.roleLBL.Location = new System.Drawing.Point(40, 86);
+            this.roleLBL.Location = new System.Drawing.Point(22, 86);
             this.roleLBL.Name = "roleLBL";
-            this.roleLBL.Size = new System.Drawing.Size(138, 42);
+            this.roleLBL.Size = new System.Drawing.Size(156, 42);
             this.roleLBL.TabIndex = 2;
-            this.roleLBL.Text = "Role:";
+            this.roleLBL.Text = "Role name:";
             this.roleLBL.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // role_IdTextBox
             // 
             this.role_IdTextBox.Location = new System.Drawing.Point(175, 39);
             this.role_IdTextBox.Name = "role_IdTextBox";
+            this.role_IdTextBox.ReadOnly = true;
             this.role_IdTextBox.Size = new System.Drawing.Size(366, 39);
             this.role_IdTextBox.TabIndex = 3;
             // 
@@ -108,6 +109,7 @@
             this.roleNewBTN.TabIndex = 6;
             this.roleNewBTN.Text = "New";
             this.roleNewBTN.UseVisualStyleBackColor = false;
+            this.roleNewBTN.Click += new System.EventHandler(this.roleNewBTN_Click);
             // 
             // role_SaveBTN
             // 
@@ -118,6 +120,7 @@
             this.role_SaveBTN.TabIndex = 7;
             this.role_SaveBTN.Text = "Save";
             this.role_SaveBTN.UseVisualStyleBackColor = false;
+            this.role_SaveBTN.Click += new System.EventHandler(this.role_SaveBTN_Click);
             // 
             // role_DeleteBTN
             // 

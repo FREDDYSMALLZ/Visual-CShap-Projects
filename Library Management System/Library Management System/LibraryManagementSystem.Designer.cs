@@ -30,12 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.menuStrip = new System.Windows.Forms.MenuStrip();
-            this.statusStrip = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.mastersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.inventoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.reportsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.roleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.profileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.memberToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -43,11 +38,16 @@
             this.rackToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sectionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sectionRackMapToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.changePasswordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.inventoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.purchaseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bookInRegisterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bookOutRegisterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mamberTransactionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.changePasswordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reportsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.statusStrip = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -66,24 +66,6 @@
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "MenuStrip";
             // 
-            // statusStrip
-            // 
-            this.statusStrip.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel});
-            this.statusStrip.Location = new System.Drawing.Point(0, 879);
-            this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Padding = new System.Windows.Forms.Padding(3, 0, 33, 0);
-            this.statusStrip.Size = new System.Drawing.Size(1185, 30);
-            this.statusStrip.TabIndex = 2;
-            this.statusStrip.Text = "StatusStrip";
-            // 
-            // toolStripStatusLabel
-            // 
-            this.toolStripStatusLabel.Name = "toolStripStatusLabel";
-            this.toolStripStatusLabel.Size = new System.Drawing.Size(60, 25);
-            this.toolStripStatusLabel.Text = "Status";
-            // 
             // mastersToolStripMenuItem
             // 
             this.mastersToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -99,25 +81,6 @@
             this.mastersToolStripMenuItem.Name = "mastersToolStripMenuItem";
             this.mastersToolStripMenuItem.Size = new System.Drawing.Size(107, 35);
             this.mastersToolStripMenuItem.Text = "Masters";
-            // 
-            // inventoryToolStripMenuItem
-            // 
-            this.inventoryToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.purchaseToolStripMenuItem,
-            this.bookInRegisterToolStripMenuItem,
-            this.bookOutRegisterToolStripMenuItem,
-            this.mamberTransactionToolStripMenuItem});
-            this.inventoryToolStripMenuItem.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inventoryToolStripMenuItem.Name = "inventoryToolStripMenuItem";
-            this.inventoryToolStripMenuItem.Size = new System.Drawing.Size(134, 35);
-            this.inventoryToolStripMenuItem.Text = "Inventory";
-            // 
-            // reportsToolStripMenuItem
-            // 
-            this.reportsToolStripMenuItem.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.reportsToolStripMenuItem.Name = "reportsToolStripMenuItem";
-            this.reportsToolStripMenuItem.Size = new System.Drawing.Size(109, 35);
-            this.reportsToolStripMenuItem.Text = "Reports";
             // 
             // roleToolStripMenuItem
             // 
@@ -168,6 +131,25 @@
             this.sectionRackMapToolStripMenuItem.Text = "Section Rack Map";
             this.sectionRackMapToolStripMenuItem.Click += new System.EventHandler(this.sectionRackMapToolStripMenuItem_Click);
             // 
+            // changePasswordToolStripMenuItem
+            // 
+            this.changePasswordToolStripMenuItem.Name = "changePasswordToolStripMenuItem";
+            this.changePasswordToolStripMenuItem.Size = new System.Drawing.Size(291, 36);
+            this.changePasswordToolStripMenuItem.Text = "Change Password";
+            this.changePasswordToolStripMenuItem.Click += new System.EventHandler(this.changePasswordToolStripMenuItem_Click);
+            // 
+            // inventoryToolStripMenuItem
+            // 
+            this.inventoryToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.purchaseToolStripMenuItem,
+            this.bookInRegisterToolStripMenuItem,
+            this.bookOutRegisterToolStripMenuItem,
+            this.mamberTransactionToolStripMenuItem});
+            this.inventoryToolStripMenuItem.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inventoryToolStripMenuItem.Name = "inventoryToolStripMenuItem";
+            this.inventoryToolStripMenuItem.Size = new System.Drawing.Size(134, 35);
+            this.inventoryToolStripMenuItem.Text = "Inventory";
+            // 
             // purchaseToolStripMenuItem
             // 
             this.purchaseToolStripMenuItem.Name = "purchaseToolStripMenuItem";
@@ -196,18 +178,38 @@
             this.mamberTransactionToolStripMenuItem.Text = "Mamber Transaction";
             this.mamberTransactionToolStripMenuItem.Click += new System.EventHandler(this.mamberTransactionToolStripMenuItem_Click);
             // 
-            // changePasswordToolStripMenuItem
+            // reportsToolStripMenuItem
             // 
-            this.changePasswordToolStripMenuItem.Name = "changePasswordToolStripMenuItem";
-            this.changePasswordToolStripMenuItem.Size = new System.Drawing.Size(291, 36);
-            this.changePasswordToolStripMenuItem.Text = "Change Password";
-            this.changePasswordToolStripMenuItem.Click += new System.EventHandler(this.changePasswordToolStripMenuItem_Click);
+            this.reportsToolStripMenuItem.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.reportsToolStripMenuItem.Name = "reportsToolStripMenuItem";
+            this.reportsToolStripMenuItem.Size = new System.Drawing.Size(109, 35);
+            this.reportsToolStripMenuItem.Text = "Reports";
+            // 
+            // statusStrip
+            // 
+            this.statusStrip.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel});
+            this.statusStrip.Location = new System.Drawing.Point(0, 879);
+            this.statusStrip.Name = "statusStrip";
+            this.statusStrip.Padding = new System.Windows.Forms.Padding(3, 0, 33, 0);
+            this.statusStrip.Size = new System.Drawing.Size(1185, 30);
+            this.statusStrip.TabIndex = 2;
+            this.statusStrip.Text = "StatusStrip";
+            // 
+            // toolStripStatusLabel
+            // 
+            this.toolStripStatusLabel.Name = "toolStripStatusLabel";
+            this.toolStripStatusLabel.Size = new System.Drawing.Size(60, 25);
+            this.toolStripStatusLabel.Text = "Status";
             // 
             // LibraryManagementSystem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.BackgroundImage = global::Library_Management_System.Properties.Resources.Flower;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1185, 909);
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.menuStrip);
@@ -217,6 +219,7 @@
             this.MainMenuStrip = this.menuStrip;
             this.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.Name = "LibraryManagementSystem";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LibraryManagementSystem";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
