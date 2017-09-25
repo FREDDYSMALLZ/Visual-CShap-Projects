@@ -20,6 +20,7 @@ namespace Library_Management_System
         private void roleNewBTN_Click(object sender, EventArgs e)
         {
             Create_New();
+            view_and_Display_Gridview();
         }
         void Create_New()
         {   
@@ -60,6 +61,7 @@ namespace Library_Management_System
                 Add_Records();
                 MessageBox.Show("Records Inserted Successfully...!");
                 Create_New();
+                view_and_Display_Gridview();
 
             }
             catch (Exception ex)
@@ -69,5 +71,70 @@ namespace Library_Management_System
             }
             
         }
+
+        private void Role_Load(object sender, EventArgs e)
+        {
+            //Create_New();
+
+        }
+        void view_and_Display_Gridview()
+        {
+            Connection connection = new Connection();
+            SqlDataAdapter sqlData = new SqlDataAdapter("Select * From Role_Master",connection.ActiveConnection());
+            DataTable dataTable = new DataTable();
+            sqlData.Fill(dataTable);
+            role_dataGridView.Rows.Clear();
+
+            foreach (DataRow item in dataTable.Rows)
+            {
+                int n = role_dataGridView.Rows.Add();
+                role_dataGridView.Rows[n].Cells[0].Value = (n + 1).ToString();
+                role_dataGridView.Rows[n].Cells[1].Value = item["Role_Id"].ToString();
+                role_dataGridView.Rows[n].Cells[2].Value = item["Role"].ToString();
+                role_dataGridView.Rows[n].Cells[3].Value = item["Role_Status"].ToString();
+                
+            }
+            //rowsCountLBL.Text = "Rows Count:" + dataTable.Rows.Count.ToString();
+            rows_Count_OutputLBL.Text = dataTable.Rows.Count.ToString();
+        }
+
+        private void role_dataGridView_MouseClick(object sender, MouseEventArgs e)//Displays the entire row content to respective rows and columns
+        {
+            int n = role_dataGridView.SelectedRows[0].Index;
+            role_IdTextBox.Text = role_dataGridView.Rows[n].Cells[1].Value.ToString();
+            roleTextbox.Text = role_dataGridView.Rows[n].Cells[2].Value.ToString();
+            status_RoleComboBox.Text = role_dataGridView.Rows[n].Cells[3].Value.ToString();
+        }
+
+        private void role_UpdateBTN_Click(object sender, EventArgs e)
+        {
+            UpdateRecord();
+            view_and_Display_Gridview();
+        }
+        void UpdateRecord()
+        {
+            Connection con = new Connection();
+            SqlCommand command = new SqlCommand(@"UPDATE [dbo].[Role_Master]
+   SET [Role_Id] = '" + role_IdTextBox.Text + "',[Role] = '" + roleTextbox.Text +
+   "',[Role_Status] = '" + status_RoleComboBox.Text + "'WHERE [Role_Id] = '" +
+   role_IdTextBox.Text + "'",con.ActiveConnection());
+            command.ExecuteNonQuery();
+
+        }
+
+        private void role_DeleteBTN_Click(object sender, EventArgs e)
+        {
+            Delete_Record();
+            view_and_Display_Gridview();
+
+        }
+        void Delete_Record()
+        {
+            Connection con = new Connection();
+            SqlCommand command = new SqlCommand(@"DELETE FROM [dbo].[Role_Master] WHERE [Role_Id] = '" + role_IdTextBox.Text + "'", con.ActiveConnection());
+            command.ExecuteNonQuery();
+
+        }
+
     }
 }

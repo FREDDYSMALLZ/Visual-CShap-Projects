@@ -39,11 +39,12 @@
             this.role_DeleteBTN = new System.Windows.Forms.Button();
             this.role_UpdateBTN = new System.Windows.Forms.Button();
             this.role_dataGridView = new System.Windows.Forms.DataGridView();
+            this.rowsCountLBL = new System.Windows.Forms.Label();
+            this.rows_Count_OutputLBL = new System.Windows.Forms.Label();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.rowsCountLBL = new System.Windows.Forms.Label();
-            this.rows_Count_OutputLBL = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.role_dataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -131,6 +132,7 @@
             this.role_DeleteBTN.TabIndex = 8;
             this.role_DeleteBTN.Text = "Delete";
             this.role_DeleteBTN.UseVisualStyleBackColor = false;
+            this.role_DeleteBTN.Click += new System.EventHandler(this.role_DeleteBTN_Click);
             // 
             // role_UpdateBTN
             // 
@@ -141,37 +143,24 @@
             this.role_UpdateBTN.TabIndex = 9;
             this.role_UpdateBTN.Text = "Update";
             this.role_UpdateBTN.UseVisualStyleBackColor = false;
+            this.role_UpdateBTN.Click += new System.EventHandler(this.role_UpdateBTN_Click);
             // 
             // role_dataGridView
             // 
+            this.role_dataGridView.AllowUserToAddRows = false;
             this.role_dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.role_dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column4,
             this.Column1,
             this.Column2,
             this.Column3});
             this.role_dataGridView.Location = new System.Drawing.Point(46, 247);
             this.role_dataGridView.Name = "role_dataGridView";
             this.role_dataGridView.RowTemplate.Height = 28;
+            this.role_dataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.role_dataGridView.Size = new System.Drawing.Size(825, 302);
             this.role_dataGridView.TabIndex = 10;
-            // 
-            // Column1
-            // 
-            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column1.HeaderText = "Role Id";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column2.HeaderText = "Role";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column3.HeaderText = "Status";
-            this.Column3.Name = "Column3";
+            this.role_dataGridView.MouseClick += new System.Windows.Forms.MouseEventHandler(this.role_dataGridView_MouseClick);
             // 
             // rowsCountLBL
             // 
@@ -190,6 +179,29 @@
             this.rows_Count_OutputLBL.Size = new System.Drawing.Size(238, 42);
             this.rows_Count_OutputLBL.TabIndex = 12;
             this.rows_Count_OutputLBL.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "#";
+            this.Column4.Name = "Column4";
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Role Id";
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 261;
+            // 
+            // Column2
+            // 
+            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column2.HeaderText = "Role";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column3.HeaderText = "Status";
+            this.Column3.Name = "Column3";
             // 
             // Role
             // 
@@ -219,6 +231,7 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Role";
+            this.Load += new System.EventHandler(this.Role_Load);
             ((System.ComponentModel.ISupportInitialize)(this.role_dataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -238,10 +251,11 @@
         private System.Windows.Forms.Button role_DeleteBTN;
         private System.Windows.Forms.Button role_UpdateBTN;
         private System.Windows.Forms.DataGridView role_dataGridView;
+        private System.Windows.Forms.Label rowsCountLBL;
+        private System.Windows.Forms.Label rows_Count_OutputLBL;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.Label rowsCountLBL;
-        private System.Windows.Forms.Label rows_Count_OutputLBL;
     }
 }
