@@ -79,20 +79,23 @@ namespace Address_Application
                 connection.Open();
                 SqlCommand command = connection.CreateCommand();
                 command.CommandType = CommandType.Text;
-                command.CommandText = "insert into AddressTBL values('" + firstNameTextBox.Text + "','"
-                    + lastNameTextBox.Text + "', '" + addressTextBox.Text + "','" + cityTextBox.Text + "', '"
-                    + stateTextBox.Text + "', '" + zipTextBox.Text + "')";
+                command.CommandText = "Delete from AddressTBL where First Name ='" + firstNameTextBox.Text + "'";
                 command.ExecuteNonQuery();
                 connection.Close();
                 disp_Data();
 
-                MessageBox.Show("The record has been Inserted Successfully. ");
+                MessageBox.Show("The record has been Deleted Successfully. ");
             }
             catch (Exception)
             {
 
-                MessageBox.Show("Error in Inserting the record. Please check your data entry or connection. ");
+                MessageBox.Show("Error in Deleting the record. Please check your data entry or connection. ");
             }
+        }
+
+        private void dataGridView_MouseClick(object sender, MouseEventArgs e)
+        {
+
         }
     }
     

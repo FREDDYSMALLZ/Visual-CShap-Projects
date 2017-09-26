@@ -31,6 +31,7 @@
             this.sectionRows_Count_OutputLBL = new System.Windows.Forms.Label();
             this.section_rowsCountLBL = new System.Windows.Forms.Label();
             this.section_dataGridView = new System.Windows.Forms.DataGridView();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -67,16 +68,25 @@
             // 
             // section_dataGridView
             // 
+            this.section_dataGridView.AllowUserToAddRows = false;
             this.section_dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.section_dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column4,
             this.Column1,
             this.Column2,
             this.Column3});
             this.section_dataGridView.Location = new System.Drawing.Point(64, 239);
             this.section_dataGridView.Name = "section_dataGridView";
             this.section_dataGridView.RowTemplate.Height = 28;
+            this.section_dataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.section_dataGridView.Size = new System.Drawing.Size(825, 302);
             this.section_dataGridView.TabIndex = 23;
+            this.section_dataGridView.MouseClick += new System.Windows.Forms.MouseEventHandler(this.section_dataGridView_MouseClick);
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "#";
+            this.Column4.Name = "Column4";
             // 
             // Column1
             // 
@@ -105,6 +115,7 @@
             this.section_UpdateBTN.TabIndex = 22;
             this.section_UpdateBTN.Text = "Update";
             this.section_UpdateBTN.UseVisualStyleBackColor = false;
+            this.section_UpdateBTN.Click += new System.EventHandler(this.section_UpdateBTN_Click);
             // 
             // section_DeleteBTN
             // 
@@ -115,6 +126,7 @@
             this.section_DeleteBTN.TabIndex = 21;
             this.section_DeleteBTN.Text = "Delete";
             this.section_DeleteBTN.UseVisualStyleBackColor = false;
+            this.section_DeleteBTN.Click += new System.EventHandler(this.section_DeleteBTN_Click);
             // 
             // section_SaveBTN
             // 
@@ -125,6 +137,7 @@
             this.section_SaveBTN.TabIndex = 20;
             this.section_SaveBTN.Text = "Save";
             this.section_SaveBTN.UseVisualStyleBackColor = false;
+            this.section_SaveBTN.Click += new System.EventHandler(this.section_SaveBTN_Click);
             // 
             // sectionNewBTN
             // 
@@ -135,6 +148,7 @@
             this.sectionNewBTN.TabIndex = 19;
             this.sectionNewBTN.Text = "New";
             this.sectionNewBTN.UseVisualStyleBackColor = false;
+            this.sectionNewBTN.Click += new System.EventHandler(this.sectionNewBTN_Click);
             // 
             // status_SectionComboBox
             // 
@@ -216,6 +230,7 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Section";
+            this.Load += new System.EventHandler(this.Section_Load);
             ((System.ComponentModel.ISupportInitialize)(this.section_dataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -237,6 +252,7 @@
         private System.Windows.Forms.Label sectionLBL;
         private System.Windows.Forms.Label status_SectionLBL;
         private System.Windows.Forms.Label section_IdLBL;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;

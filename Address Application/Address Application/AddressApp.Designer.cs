@@ -146,6 +146,7 @@
             this.dataGridView.RowTemplate.Height = 28;
             this.dataGridView.Size = new System.Drawing.Size(530, 304);
             this.dataGridView.TabIndex = 13;
+            this.dataGridView.MouseClick += new System.Windows.Forms.MouseEventHandler(this.dataGridView_MouseClick);
             // 
             // insertBtn
             // 

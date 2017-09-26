@@ -75,6 +75,7 @@ namespace Library_Management_System
         private void Role_Load(object sender, EventArgs e)
         {
             //Create_New();
+            view_and_Display_Gridview();
 
         }
         void view_and_Display_Gridview()
@@ -130,9 +131,24 @@ namespace Library_Management_System
         }
         void Delete_Record()
         {
-            Connection con = new Connection();
-            SqlCommand command = new SqlCommand(@"DELETE FROM [dbo].[Role_Master] WHERE [Role_Id] = '" + role_IdTextBox.Text + "'", con.ActiveConnection());
-            command.ExecuteNonQuery();
+            try
+            {
+                Connection con = new Connection();
+                SqlCommand command = new SqlCommand(@"DELETE FROM [dbo].[Role_Master] WHERE [Role_Id] = '" + role_IdTextBox.Text + "'", con.ActiveConnection());
+                if (MessageBox.Show("Are Sure you want to delete the record ??", "DELETE RECORD", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
+                {
+                    if (command.ExecuteNonQuery() > 0)
+                    {
+                        MessageBox.Show(" Record Successfully deleted");
+                    }
+                }
+               // command.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
 
         }
 
