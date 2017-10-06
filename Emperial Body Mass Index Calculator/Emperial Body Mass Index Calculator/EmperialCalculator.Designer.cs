@@ -75,7 +75,7 @@
             // 
             // calculateBMI_btn
             // 
-            this.calculateBMI_btn.Location = new System.Drawing.Point(180, 270);
+            this.calculateBMI_btn.Location = new System.Drawing.Point(182, 288);
             this.calculateBMI_btn.Name = "calculateBMI_btn";
             this.calculateBMI_btn.Size = new System.Drawing.Size(174, 64);
             this.calculateBMI_btn.TabIndex = 4;
@@ -85,7 +85,7 @@
             // 
             // clearBtn
             // 
-            this.clearBtn.Location = new System.Drawing.Point(360, 270);
+            this.clearBtn.Location = new System.Drawing.Point(362, 288);
             this.clearBtn.Name = "clearBtn";
             this.clearBtn.Size = new System.Drawing.Size(174, 64);
             this.clearBtn.TabIndex = 5;
@@ -95,7 +95,7 @@
             // 
             // exitBtn
             // 
-            this.exitBtn.Location = new System.Drawing.Point(538, 270);
+            this.exitBtn.Location = new System.Drawing.Point(540, 288);
             this.exitBtn.Name = "exitBtn";
             this.exitBtn.Size = new System.Drawing.Size(174, 64);
             this.exitBtn.TabIndex = 6;
@@ -116,9 +116,9 @@
             // 
             this.BMI_OutPutLBL.BackColor = System.Drawing.Color.White;
             this.BMI_OutPutLBL.ForeColor = System.Drawing.Color.Black;
-            this.BMI_OutPutLBL.Location = new System.Drawing.Point(330, 185);
+            this.BMI_OutPutLBL.Location = new System.Drawing.Point(330, 147);
             this.BMI_OutPutLBL.Name = "BMI_OutPutLBL";
-            this.BMI_OutPutLBL.Size = new System.Drawing.Size(382, 43);
+            this.BMI_OutPutLBL.Size = new System.Drawing.Size(382, 120);
             this.BMI_OutPutLBL.TabIndex = 8;
             this.BMI_OutPutLBL.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
