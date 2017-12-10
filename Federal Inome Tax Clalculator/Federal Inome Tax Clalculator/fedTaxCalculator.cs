@@ -162,6 +162,11 @@ namespace Federal_Inome_Tax_Clalculator
         {
             this.Close();//Form closing
         }
+
+        private void incomeTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
     }
 
