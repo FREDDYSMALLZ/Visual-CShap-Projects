@@ -106,8 +106,6 @@ namespace ConsoleApp1
             }
             else
             {
-                // System.out.println("Error: invalid status");
-                // System.exit(1);
                 Console.WriteLine("Error. Invalid status");
             }
 
@@ -115,9 +113,9 @@ namespace ConsoleApp1
            
             Console.WriteLine("You entered {0} as your status, {1:C} as your income. Therefore," +
               " your Federal taxable income is {2:C}.", status, income, tax);
-            //Console.WriteLine("Tax is " + (int)(tax * 100) / 100);
+           
  
     Console.ReadLine();
-        }
+        }                
     }
 }
