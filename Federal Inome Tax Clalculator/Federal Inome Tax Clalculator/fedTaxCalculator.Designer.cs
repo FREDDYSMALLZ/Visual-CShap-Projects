@@ -41,9 +41,9 @@
             // 
             // filingStatusPromptLBL
             // 
-            this.filingStatusPromptLBL.Location = new System.Drawing.Point(217, 36);
+            this.filingStatusPromptLBL.Location = new System.Drawing.Point(42, 9);
             this.filingStatusPromptLBL.Name = "filingStatusPromptLBL";
-            this.filingStatusPromptLBL.Size = new System.Drawing.Size(510, 152);
+            this.filingStatusPromptLBL.Size = new System.Drawing.Size(391, 152);
             this.filingStatusPromptLBL.TabIndex = 0;
             this.filingStatusPromptLBL.Text = "Please Enter the Filing Status(Number Only);\r\n0-Single Filers.\r\n1-Married Jointly" +
     " or qualifying widow(er)\r\n2-Married Separetely.\r\n3-Head of Household.\r\n";
@@ -51,17 +51,17 @@
             // 
             // statusTextBox
             // 
-            this.statusTextBox.Location = new System.Drawing.Point(222, 181);
+            this.statusTextBox.Location = new System.Drawing.Point(46, 122);
             this.statusTextBox.Multiline = true;
             this.statusTextBox.Name = "statusTextBox";
-            this.statusTextBox.Size = new System.Drawing.Size(505, 64);
+            this.statusTextBox.Size = new System.Drawing.Size(317, 28);
             this.statusTextBox.TabIndex = 1;
             // 
             // incomePromptLBL
             // 
-            this.incomePromptLBL.Location = new System.Drawing.Point(222, 248);
+            this.incomePromptLBL.Location = new System.Drawing.Point(46, 150);
             this.incomePromptLBL.Name = "incomePromptLBL";
-            this.incomePromptLBL.Size = new System.Drawing.Size(505, 59);
+            this.incomePromptLBL.Size = new System.Drawing.Size(317, 37);
             this.incomePromptLBL.TabIndex = 2;
             this.incomePromptLBL.Text = "Please Enter your Income:";
             this.incomePromptLBL.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -69,34 +69,35 @@
             // incomeTaxDIisplayLBL
             // 
             this.incomeTaxDIisplayLBL.BackColor = System.Drawing.Color.White;
-            this.incomeTaxDIisplayLBL.Location = new System.Drawing.Point(222, 436);
+            this.incomeTaxDIisplayLBL.Location = new System.Drawing.Point(43, 241);
             this.incomeTaxDIisplayLBL.Name = "incomeTaxDIisplayLBL";
-            this.incomeTaxDIisplayLBL.Size = new System.Drawing.Size(510, 157);
+            this.incomeTaxDIisplayLBL.Size = new System.Drawing.Size(320, 89);
             this.incomeTaxDIisplayLBL.TabIndex = 3;
             this.incomeTaxDIisplayLBL.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // incomeDispLabel
             // 
-            this.incomeDispLabel.Location = new System.Drawing.Point(227, 377);
+            this.incomeDispLabel.Location = new System.Drawing.Point(46, 208);
             this.incomeDispLabel.Name = "incomeDispLabel";
-            this.incomeDispLabel.Size = new System.Drawing.Size(505, 59);
+            this.incomeDispLabel.Size = new System.Drawing.Size(317, 33);
             this.incomeDispLabel.TabIndex = 4;
             this.incomeDispLabel.Text = "Federal Tax:";
             this.incomeDispLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // incomeTextBox
             // 
-            this.incomeTextBox.Location = new System.Drawing.Point(222, 310);
+            this.incomeTextBox.Location = new System.Drawing.Point(46, 180);
             this.incomeTextBox.Multiline = true;
             this.incomeTextBox.Name = "incomeTextBox";
-            this.incomeTextBox.Size = new System.Drawing.Size(505, 64);
+            this.incomeTextBox.Size = new System.Drawing.Size(317, 25);
             this.incomeTextBox.TabIndex = 5;
+            this.incomeTextBox.TextChanged += new System.EventHandler(this.incomeTextBox_TextChanged);
             // 
             // calculateTaxBtn
             // 
-            this.calculateTaxBtn.Location = new System.Drawing.Point(178, 621);
+            this.calculateTaxBtn.Location = new System.Drawing.Point(58, 333);
             this.calculateTaxBtn.Name = "calculateTaxBtn";
-            this.calculateTaxBtn.Size = new System.Drawing.Size(202, 70);
+            this.calculateTaxBtn.Size = new System.Drawing.Size(105, 33);
             this.calculateTaxBtn.TabIndex = 6;
             this.calculateTaxBtn.Text = "C&alculate Tax";
             this.calculateTaxBtn.UseVisualStyleBackColor = true;
@@ -104,9 +105,9 @@
             // 
             // clearBtn
             // 
-            this.clearBtn.Location = new System.Drawing.Point(386, 621);
+            this.clearBtn.Location = new System.Drawing.Point(169, 333);
             this.clearBtn.Name = "clearBtn";
-            this.clearBtn.Size = new System.Drawing.Size(202, 70);
+            this.clearBtn.Size = new System.Drawing.Size(80, 33);
             this.clearBtn.TabIndex = 7;
             this.clearBtn.Text = "C&lear";
             this.clearBtn.UseVisualStyleBackColor = true;
@@ -114,9 +115,9 @@
             // 
             // exitBtn
             // 
-            this.exitBtn.Location = new System.Drawing.Point(594, 621);
+            this.exitBtn.Location = new System.Drawing.Point(256, 333);
             this.exitBtn.Name = "exitBtn";
-            this.exitBtn.Size = new System.Drawing.Size(202, 70);
+            this.exitBtn.Size = new System.Drawing.Size(98, 33);
             this.exitBtn.TabIndex = 8;
             this.exitBtn.Text = "E&xit";
             this.exitBtn.UseVisualStyleBackColor = true;
@@ -124,10 +125,10 @@
             // 
             // fedTaxCalculator
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 26F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(914, 797);
+            this.ClientSize = new System.Drawing.Size(393, 368);
             this.Controls.Add(this.exitBtn);
             this.Controls.Add(this.clearBtn);
             this.Controls.Add(this.calculateTaxBtn);

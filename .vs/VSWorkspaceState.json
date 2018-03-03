@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Compute BMI",
+    "\\Emperial BMI Calculator"
   ],
+  "SelectedNode": "\\Compute BMI\\Compute BMI.sln",
   "PreviewInSolutionExplorer": false
 }
