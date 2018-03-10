@@ -28,7 +28,8 @@ namespace MineSweeper
         {
             
         }
-
+        /*When the start button is clicked, the lines of code checks for the level of difficulty
+         from the radio buttons. This is also the functionality of the the radio buttons*/
         private void bttn_start_Click(object sender, EventArgs e)
         {
             int diff = 0;
@@ -51,6 +52,16 @@ namespace MineSweeper
         }
 
         private void rb_hard_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rb_easy_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rb_medium_CheckedChanged(object sender, EventArgs e)
         {
 
         }

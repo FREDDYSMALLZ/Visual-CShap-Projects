@@ -91,7 +91,7 @@
             this.incomeTextBox.Name = "incomeTextBox";
             this.incomeTextBox.Size = new System.Drawing.Size(317, 25);
             this.incomeTextBox.TabIndex = 5;
-            this.incomeTextBox.TextChanged += new System.EventHandler(this.incomeTextBox_TextChanged);
+           
             // 
             // calculateTaxBtn
             // 
@@ -125,10 +125,10 @@
             // 
             // fedTaxCalculator
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 26F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(393, 368);
+            this.ClientSize = new System.Drawing.Size(418, 382);
             this.Controls.Add(this.exitBtn);
             this.Controls.Add(this.clearBtn);
             this.Controls.Add(this.calculateTaxBtn);
@@ -145,6 +145,7 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FEDERAL INCOME TAX CALCULATOR";
+          
             this.ResumeLayout(false);
             this.PerformLayout();
 

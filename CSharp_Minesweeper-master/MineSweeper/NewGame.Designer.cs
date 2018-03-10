@@ -46,6 +46,7 @@
             this.rb_easy.TabStop = true;
             this.rb_easy.Text = "Easy";
             this.rb_easy.UseVisualStyleBackColor = true;
+            this.rb_easy.CheckedChanged += new System.EventHandler(this.rb_easy_CheckedChanged);
             // 
             // rb_medium
             // 
@@ -58,6 +59,7 @@
             this.rb_medium.TabStop = true;
             this.rb_medium.Text = "Medium";
             this.rb_medium.UseVisualStyleBackColor = true;
+            this.rb_medium.CheckedChanged += new System.EventHandler(this.rb_medium_CheckedChanged);
             // 
             // rb_hard
             // 

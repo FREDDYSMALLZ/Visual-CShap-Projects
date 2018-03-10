@@ -16,9 +16,8 @@ namespace MineSweeper
             InitializeComponent();
             
         }
-
-
-
+        /*This line of code starts the new game when the new button is clicked
+         it also loads the new game form */
         private void newGameToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MineSweeper.NewGame newGame = new MineSweeper.NewGame();
@@ -61,8 +60,6 @@ namespace MineSweeper
             
             
         }
-
-
         void bttnOnclick(object sender, System.EventArgs e)
         {
             if (!tmr_ElapsedTime.Enabled)
@@ -82,8 +79,6 @@ namespace MineSweeper
             int x = System.Convert.ToInt32(split[0]);
             int y = System.Convert.ToInt32(split[1]);
 
-
-
             if (grid[x, y] == -1)
             {
                 //Game Over!
@@ -100,11 +95,8 @@ namespace MineSweeper
 
                     }
                 }
-
-
             }
-            
-            
+                       
             removeBlank(x, y);
             bttnClick.Visible = false;
             
@@ -112,10 +104,8 @@ namespace MineSweeper
 
         void bttnOnRightClick(object sender, EventArgs e)
         {
-
-        
+       
         }
-
         private Button createButton(int x, int y, int gridX, int gridY)
         {
             Button bttn = new Button();
@@ -143,7 +133,9 @@ namespace MineSweeper
             return lbl;
         }
 
-
+        /*
+         THIS CODE CREATES THE GRID FOR THE MINES AND POPULATES THE CELLS
+             */
         private int[,] grid;
         private Button[,] btn_grid;
         private Label[,] lbl_grid;
@@ -155,25 +147,12 @@ namespace MineSweeper
         {
             this.Width = startX * 2 + (width+1) * 24-5;
             this.Height = startY * 2 + (height) * 24;
-            //this.Width = 10;
-
-
-
-            
-
-
+ 
             grid = new int[width, height];
             btn_grid = new Button[width, height];
             lbl_grid = new Label[width, height];
 
-
-
             Random rnd1 = new Random();
-
-
-            
-
-
 
             //Add buttons/Labels.
             for (int x = 0; x < width; x++)
@@ -181,13 +160,13 @@ namespace MineSweeper
                 for (int y = 0; y < height; y++)
                 {
                     grid[x, y] = 0;
-
-                    
+   
                     btn_grid[x, y] = createButton(startX + 24 * (x + 0), startY + 24 * (y + 0), x, y);
                     lbl_grid[x, y] = createLables(startX + 24 * (x + 0), startY + 24 * (y + 0));
                 }
             }
 
+            /*Adds mines to the cells on the grid*/
             int currMineCount = mintCount;
             //Add Mines
             while (currMineCount > 0)
@@ -210,7 +189,7 @@ namespace MineSweeper
             {
                 for (int y = 0; y < height; y++)
                 {
-                    //grid[x, y] = 0;
+                  
                     if (grid[x, y] != -1)
                     {
                         //grid[width, height]
@@ -243,9 +222,7 @@ namespace MineSweeper
 
                        
                     }
-
-                    //btn_grid[x, y] = createButton(startX + 24 * (x + 0), startY + 24 * (y + 0));
-                    //lbl_grid[x, y] = createLables(startX + 24 * (x + 0), startY + 24 * (y + 0));
+                    
                 }
             }
 
@@ -254,7 +231,11 @@ namespace MineSweeper
             return true;
         }
 
-        
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void clearPreviousGame()
         {
             if (btn_grid != null)
@@ -277,8 +258,7 @@ namespace MineSweeper
                             Controls.Remove(lbl_grid[x, y]);
                         }
 
-                        //btn_grid[x, y] = createButton(startX + 24 * (x + 0), startY + 24 * (y + 0));
-                        //lbl_grid[x, y] = createLables(startX + 24 * (x + 0), startY + 24 * (y + 0));
+                        
                     }
                 }
             }
