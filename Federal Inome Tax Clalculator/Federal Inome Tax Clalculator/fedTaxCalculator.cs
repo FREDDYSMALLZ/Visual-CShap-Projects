@@ -44,15 +44,8 @@ namespace Federal_Inome_Tax_Clalculator
             {
                 status_Description = "Invalid inpute for computing/filing federal tax";
             }
-            /*
-            double ten_percent = 10 / 100;
-            double fifteen_percent = 15 / 100;
-            double twenty_five_percent = 25 / 100;
-            double twenty_eight_percent = 28 / 100;
-            double thirty_three_percent = 33 / 100;
-            double thirty_five_percent = 35 / 100;
-            double thirty_ninesix_percent = 39.6 / 100;  
-          */
+           
+          
             double tax = 0;
 
             if (status == 0)
