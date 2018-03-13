@@ -18,7 +18,6 @@ namespace Trapezium_Getter_Setter
                 this.length_b = length_b;
                 this.height = height;
             }
-
             public double Length_a
             {
                 get { return length_a; }

@@ -25,10 +25,7 @@ namespace Trapezium_Getter_Setter
             Console.WriteLine("Press Enter to Exit");
 
             Console.ReadLine();
-
-
         }
-
         private static void Display_Trapezium_Area(Trapezium myTrapezium)
         {
             Console.WriteLine($"The Long length of the trapezium is   : { myTrapezium.Length_a} meters.   ");
