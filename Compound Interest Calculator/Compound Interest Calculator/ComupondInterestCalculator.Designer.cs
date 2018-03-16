@@ -228,7 +228,7 @@
             this.Name = "ComupondInterestCalculator";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Compound Interest Calculator";
+            this.Text = " ";
             this.ResumeLayout(false);
             this.PerformLayout();
 

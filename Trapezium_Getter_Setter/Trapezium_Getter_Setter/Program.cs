@@ -21,7 +21,7 @@ namespace Trapezium_Getter_Setter
 
             var myTrapezium = new Trapezium(length_a, length_b, height);
             Display_Trapezium_Area(myTrapezium);//Mthod to get the area of the Trapezium
-
+             
             Console.WriteLine("Press Enter to Exit");
 
             Console.ReadLine();
