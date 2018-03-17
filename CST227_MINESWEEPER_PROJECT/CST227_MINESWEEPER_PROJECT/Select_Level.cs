@@ -12,6 +12,9 @@ namespace CST227_MINESWEEPER_PROJECT
 {
     public partial class Select_Level : Form
     {
+        int gameBoardSize = 25;
+        int minimumSize = 1;
+        int maxSize = 50;
         public Select_Level()
         {
             InitializeComponent();
@@ -45,7 +48,19 @@ namespace CST227_MINESWEEPER_PROJECT
         //TO:DO- Need to implement this method so that the user can select the level of play and then start playing the game
         private static void startGame(int diff)
         {
-            throw new NotImplementedException();
+            NewMethod();
+        }
+
+        private static void NewMethod()
+        {
+            GameBoard gameBoard = NewMethod1();
+            gameBoard.PopulateBoard();
+            gameBoard.DisplayGameBoard();
+        }
+
+        private static GameBoard NewMethod1()
+        {
+            return new GameBoard(gameBoardSize: gameBoardSize, minimumSize: minimumSize, maxSize: maxSize);
         }
 
         private void rdBttn_Moderate_CheckedChanged(object sender, EventArgs e)
