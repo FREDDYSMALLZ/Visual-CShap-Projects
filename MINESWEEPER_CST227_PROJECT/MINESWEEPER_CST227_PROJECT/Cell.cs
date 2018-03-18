@@ -19,16 +19,20 @@ namespace MINESWEEPER_CST227_PROJECT
         // Constructor for the cell class
         public Cell(int row, int column, int neighbor, Boolean cellVisited, Boolean liveCell)
         {
-            this.row = row;
-            this.column = column;
-            neighbor = 0;
-            cellVisited = false;
-            liveCell = false;
+            this.Row = row;
+            this.Colm = column;
+            this.Neighbor = neighbor;
+            this.cell_Visited = cellVisited;
+            this.live_Cell = liveCell;
         }
-
+        //Default Constructor
         public Cell(int i, int j)
         {
-            this.j = j;
+            this.Row = i;
+            this.Colm = j;
+            this.Neighbor = 0;
+            this.cell_Visited = false;
+            this.live_Cell = false;
         }
 
 
@@ -63,7 +67,6 @@ namespace MINESWEEPER_CST227_PROJECT
             set { cellVisited = value; }
         }
         private Boolean liveCell;
-        private int j;
 
         public Boolean live_Cell
         {

@@ -6,37 +6,18 @@ using System.Threading.Tasks;
 
 namespace MINESWEEPER_CST227_PROJECT
 {
-    class GameBoard
+    abstract class GameBoard
     {
-        private Cell[,] cell;
+        protected Cell[,] cell;
         private int gameBoardSize;
-        private  int minSize;
+        private int minSize;
         private int maxSize;
-        //private Boolean gameBoardStart;
-        //private Boolean gameBoardStop;
         private Boolean gameBoardInitialize;
-
-        /*private Boolean gameBoardStart;
-
-        public Boolean Start_GameBoard
-        {
-            get { return gameBoardStart; }
-            
-        }
-        private Boolean gameBoardStop;
-
-        public Boolean Stop_GameBoard
-        {
-            get { return gameBoardStop; }
-            
-        }
-        */
-        private Boolean boardState;
 
         public Boolean BoardState
         {
             get { return gameBoardInitialize; }
-           
+
         }
 
 
@@ -50,34 +31,24 @@ namespace MINESWEEPER_CST227_PROJECT
 
             //Get the size of the board and determine if it is the right size
             Board_Size(gameBoardSize, maxSize, minSize);
-
+            //Initialize the cell array
+            cell = new Cell[gameBoardSize, gameBoardSize];
         }
         /*Method to dtermine the Board_Size
          * Test for ivalid board size entries
          */
         private void Board_Size(int gameBoardSize, int maxSize, int minSize)
         {
-            if (gameBoardSize <= minSize)
+            if (gameBoardSize < minSize)
             {
                 throw new ApplicationException("Invalid Game Board Size..!!! The board size cannot be less than 0");
             }
-            if (gameBoardSize >= maxSize)
+            if (gameBoardSize > maxSize)
             {
-                throw new ApplicationException("Ivalid Gameboard size..!!! The game board cannot be greater than the set Maximum size.");
+                throw new ApplicationException("Invalid Gameboard size..!!! The game board cannot be greater than the set Maximum size.");
             }
-            gameBoardInitialize = true; //Initializes the boad size if the conditions are met
-           /*if (gameBoardSize == minSize && gameBoardSize == maxSize)
-            {
-                gameBoardStart = true;
+            gameBoardInitialize = true;
 
-            }
-            if (gameBoardSize != minSize || gameBoardSize != maxSize)
-            {
-                gameBoardStop = true;
-
-            }
-            */
-                       
         }
         //Method to Create cells on the gameboard 
         public void Fill_Game_Board()
@@ -86,19 +57,12 @@ namespace MINESWEEPER_CST227_PROJECT
             {
                 for (int j = 0; j < cell.GetLength(1); j++)
                 {
-                    Cell gridCell = new Cell(i, j)
-                    {
-                        live_Cell = Check_Cell_If_Live()
-                    };
-                    if (gridCell.live_Cell == true)
-                    {
-                        gridCell.Neighbor = 9;
+                    Cell gridCell = new Cell(i, j);
+                    gridCell.live_Cell = Check_Cell_If_Live();
 
-                        cell[i, j] = gridCell;
-
-                    }
+                    cell[i, j] = gridCell;
                 }
-                
+
             }
 
             Check_Live_Neighbors();
@@ -111,20 +75,22 @@ namespace MINESWEEPER_CST227_PROJECT
                 for (int j = 0; j < cell.GetLength(1); j++)
                 {
                     int x = 0;
-                    x += Check_Live_Neighbors(i - 1, j - 1);
-                    x += Check_Live_Neighbors(i - 1, j);
-                    x += Check_Live_Neighbors(i - 1, j + 1);
-                    x += Check_Live_Neighbors(i, j - 1);
-                    x += Check_Live_Neighbors(i, j + 1);
-                    x += Check_Live_Neighbors(i + 1, j - 1);
-                    x += Check_Live_Neighbors(i + 1, j);
-                    x += Check_Live_Neighbors(i + 1, j + 1);
 
+                    if (cell[i, j].live_Cell)
+                        x = 9;
+                    else
+                    {
+                        x += Check_Live_Neighbors(i - 1, j - 1);
+                        x += Check_Live_Neighbors(i - 1, j);
+                        x += Check_Live_Neighbors(i - 1, j + 1);
+                        x += Check_Live_Neighbors(i, j - 1);
+                        x += Check_Live_Neighbors(i, j + 1);
+                        x += Check_Live_Neighbors(i + 1, j - 1);
+                        x += Check_Live_Neighbors(i + 1, j);
+                        x += Check_Live_Neighbors(i + 1, j + 1);
+                    }
                     cell[i, j].Neighbor = x;
-
-
                 }
-
             }
         }
 
@@ -141,7 +107,7 @@ namespace MINESWEEPER_CST227_PROJECT
                     }
 
                 }
-               
+
             }
 
             return 0;
@@ -159,16 +125,16 @@ namespace MINESWEEPER_CST227_PROJECT
             {
                 return false;
             }
-            
+
         }
         //Method to display the gameboard
-        public void DisplayGameBoard()
+        public virtual void DisplayGameBoard()
         {
             for (int i = 0; i < cell.GetLength(0); i++)
             {
                 for (int j = 0; j < cell.GetLength(1); j++)
                 {
-                    if (cell[i,j].live_Cell)
+                    if (cell[i, j].live_Cell)
                     {
                         Console.Write(" * ");
 
@@ -177,13 +143,10 @@ namespace MINESWEEPER_CST227_PROJECT
                     {
                         Console.Write("{0}", cell[i, j].Neighbor);
                     }
-
-                    Console.Write("\n");
-
                 }
-
+                Console.Write("\n");
             }
         }
     }
-    }
+}
 

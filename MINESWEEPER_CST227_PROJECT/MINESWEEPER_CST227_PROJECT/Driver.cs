@@ -8,15 +8,27 @@ namespace MINESWEEPER_CST227_PROJECT
 {
     class Driver
     {
+        private int minSize = 0;
+        private int maxSize = 50;
+        //Prompt the user to enter the row and column
+            public int Get_User_Input()
+            {
+                Console.WriteLine("Please enter your board size, between {0} and {1}.", minSize, maxSize);
+                int gameBoard = Convert.ToInt32(Console.ReadLine()); 
+                return gameBoard;
+            }
+    
         static void Main(string[] args)
         {
-            int gameBoardSize = 25;
-            int minSize = 1;
-            int maxSize = 50;
-
+  
             try
             {
-                GameBoard gameBoard = new GameBoard(gameBoardSize, minSize, maxSize);
+                
+                //GameBoard gameBoard = new GameBoard(gameBoardSize, minSize, maxSize);
+
+                Driver test = new Driver();
+
+                MineSweeperGame gameBoard = new MineSweeperGame(test.Get_User_Input(), test.minSize, test.maxSize);
 
                 if (!gameBoard.BoardState)
                 {
@@ -26,7 +38,7 @@ namespace MINESWEEPER_CST227_PROJECT
 
                 }
                 gameBoard.Fill_Game_Board();
-                gameBoard.DisplayGameBoard();
+                gameBoard.PlayGame();
             }
             catch (Exception ex)
             {
