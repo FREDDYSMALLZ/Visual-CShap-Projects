@@ -45,6 +45,8 @@
     <Compile Include="Cell.cs" />
     <Compile Include="GameBoard.cs" />
     <Compile Include="Driver.cs" />
+    <Compile Include="IPlayable.cs" />
+    <Compile Include="MineSweeperGame.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
