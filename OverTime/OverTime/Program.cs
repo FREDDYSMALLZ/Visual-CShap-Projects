@@ -1,45 +1,48 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace OverTime
 {
-    class Program
-    {
-        private const double BaseHours = 40.0;
-        private const double OvertimeRate = 1.5;
+	class Program
+	{
+		static void Main(string[] args)
+		{
+			const double federalTax = 0.28;
+			const double socialsecurityTax = 0.0765;
 
-        static void Main(string[] args)
-        {
-            Console.Write("Please Enter the Number of Hours worked:..");
-            var hoursWorked = Convert.ToDouble(Console.ReadLine());
+			Console.WriteLine("       WEEKLY PAYROLL INFORMATION: CARDONE INDUSTRIES");
+			Console.WriteLine("       ---------------------------------------------");
 
-            Console.Write("Please Enter your hourly pay rate:..");
-            var hourlyPayRate = Convert.ToDouble(Console.ReadLine());
+			Console.Write("Please Enter your Full Name: ");
+			var employeeName = Console.ReadLine();
 
-            if (hoursWorked > BaseHours)
-            {
-                var basePay = hourlyPayRate * BaseHours;
+			Console.Write("Please enter the number of hours worked this week: ");
+			var userInput = Console.ReadLine();
+			var hoursWorked = Convert.ToDouble(userInput);
 
-                var overtimeHours = hoursWorked - BaseHours;
+			Console.Write("Please enter the number of " + "Overtime hours worked this week: ");
+			userInput = Console.ReadLine();
+			var overtimeWorked = Convert.ToDouble(userInput);
 
-                var overtimePay = overtimeHours * OvertimeRate * hourlyPayRate;
-                //Calculate the Gross Pay
-                var grossPay = basePay + overtimePay;
+			Console.Write("Please enter  your hourly pay rate: ");
+			userInput = Console.ReadLine();
+			var payRate = Convert.ToDouble(userInput);
 
-            }
-            else
-            {
-                var grossPay = hourlyPayRate * hoursWorked;
-            }
+			var grossPay = (hoursWorked * payRate + overtimeWorked * 1.5 * payRate);
+			var fedWithholding = federalTax * grossPay;
+			var socialSecWthholding = socialsecurityTax * grossPay;
+			var netPay = fedWithholding + socialSecWthholding - grossPay;
+			Console.WriteLine("The weekly payroll " +
+							  "information summary for: " + employeeName);
+			Console.WriteLine("-----------------------------------------------------");
 
-            Console.WriteLine("Press Enter to exit the program.");
+			Console.WriteLine("Gross pay:  {0:C2}    ", grossPay);
+			Console.WriteLine("       Federal income taxes witheld:{0:C2}", fedWithholding);
+			Console.WriteLine("       Social Security taxes witheld:{0:C2}", socialSecWthholding);
+			Console.WriteLine("       Net Pay: {0:C2}", netPay);
 
-            Console.ReadLine();
-        }
-        
-    }
+			Console.WriteLine("Press Enter to Exit the Application.");
+			Console.ReadLine();
+		}
+
+	}
 }
