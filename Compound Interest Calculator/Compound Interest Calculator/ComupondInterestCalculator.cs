@@ -19,11 +19,14 @@ namespace Compound_Interest_Calculator
 
         private void calculateBtn_Click(object sender, EventArgs e)
         {
+            double principal;
             try
             {
-                double principal = string.IsNullOrEmpty(principalTextBox.Text) ? 1 : double.Parse(principalTextBox.Text);
-                double annual_Interest_Rate = string.IsNullOrEmpty(annualInterestTextBox.Text) ? 1 : double.Parse(annualInterestTextBox.Text);
-                double number_Of_Times = string.IsNullOrEmpty(numberOfTimesTextBox.Text) ? 1 : double.Parse(numberOfTimesTextBox.Text);
+                principal = string.IsNullOrEmpty(principalTextBox.Text) ? 1 : double.Parse(principalTextBox.Text);
+                double annual_Interest_Rate = string.IsNullOrEmpty(annualInterestTextBox.Text)
+                    ? 1
+                    : double.Parse(annualInterestTextBox.Text);
+                var number_Of_Times = string.IsNullOrEmpty(numberOfTimesTextBox.Text) ? 1 : double.Parse(numberOfTimesTextBox.Text);
                 double number_Of_Years = string.IsNullOrEmpty(numberOfYeasrTextBox.Text) ? 1 : double.Parse(numberOfYeasrTextBox.Text);
 
                 if (principal == 0)
@@ -77,6 +80,11 @@ namespace Compound_Interest_Calculator
         private void exitBtn_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void ComupondInterestCalculator_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
