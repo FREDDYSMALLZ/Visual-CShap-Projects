@@ -70,7 +70,7 @@
             this.milesDrivenTextBox.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.milesDrivenTextBox.Location = new System.Drawing.Point(416, 50);
             this.milesDrivenTextBox.Name = "milesDrivenTextBox";
-            this.milesDrivenTextBox.Size = new System.Drawing.Size(297, 30);
+            this.milesDrivenTextBox.Size = new System.Drawing.Size(297, 27);
             this.milesDrivenTextBox.TabIndex = 3;
             // 
             // numberOfGallonsTextBox
@@ -78,7 +78,7 @@
             this.numberOfGallonsTextBox.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numberOfGallonsTextBox.Location = new System.Drawing.Point(416, 94);
             this.numberOfGallonsTextBox.Name = "numberOfGallonsTextBox";
-            this.numberOfGallonsTextBox.Size = new System.Drawing.Size(297, 30);
+            this.numberOfGallonsTextBox.Size = new System.Drawing.Size(297, 27);
             this.numberOfGallonsTextBox.TabIndex = 4;
             // 
             // vehicleMPGLabel
@@ -117,7 +117,7 @@
             // 
             // FuelEconomyCalculatir
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(776, 391);
@@ -135,6 +135,7 @@
             this.Name = "FuelEconomyCalculatir";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Fuel Economy Calculator";
+            this.Load += new System.EventHandler(this.FuelEconomyCalculatir_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

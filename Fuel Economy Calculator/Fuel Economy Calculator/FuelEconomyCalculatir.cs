@@ -52,5 +52,10 @@ namespace Fuel_Economy_Calculator
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void FuelEconomyCalculatir_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

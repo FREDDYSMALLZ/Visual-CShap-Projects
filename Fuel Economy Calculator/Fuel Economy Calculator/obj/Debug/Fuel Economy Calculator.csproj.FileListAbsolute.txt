@@ -8,3 +8,12 @@ C:\Users\FREDDYSMALLZ\source\Repos\Fuel Economy Calculator\Fuel Economy Calculat
 C:\Users\FREDDYSMALLZ\source\Repos\Fuel Economy Calculator\Fuel Economy Calculator\obj\Debug\Fuel Economy Calculator.csproj.CoreCompileInputs.cache
 C:\Users\FREDDYSMALLZ\source\Repos\Fuel Economy Calculator\Fuel Economy Calculator\obj\Debug\Fuel Economy Calculator.exe
 C:\Users\FREDDYSMALLZ\source\Repos\Fuel Economy Calculator\Fuel Economy Calculator\obj\Debug\Fuel Economy Calculator.pdb
+C:\Users\HomeUser\Source\Repos\Visual-CShap-Projects\Fuel Economy Calculator\Fuel Economy Calculator\bin\Debug\Fuel Economy Calculator.exe.config
+C:\Users\HomeUser\Source\Repos\Visual-CShap-Projects\Fuel Economy Calculator\Fuel Economy Calculator\bin\Debug\Fuel Economy Calculator.exe
+C:\Users\HomeUser\Source\Repos\Visual-CShap-Projects\Fuel Economy Calculator\Fuel Economy Calculator\bin\Debug\Fuel Economy Calculator.pdb
+C:\Users\HomeUser\Source\Repos\Visual-CShap-Projects\Fuel Economy Calculator\Fuel Economy Calculator\obj\Debug\Fuel_Economy_Calculator.FuelEconomyCalculatir.resources
+C:\Users\HomeUser\Source\Repos\Visual-CShap-Projects\Fuel Economy Calculator\Fuel Economy Calculator\obj\Debug\Fuel_Economy_Calculator.Properties.Resources.resources
+C:\Users\HomeUser\Source\Repos\Visual-CShap-Projects\Fuel Economy Calculator\Fuel Economy Calculator\obj\Debug\Fuel Economy Calculator.csproj.GenerateResource.cache
+C:\Users\HomeUser\Source\Repos\Visual-CShap-Projects\Fuel Economy Calculator\Fuel Economy Calculator\obj\Debug\Fuel Economy Calculator.csproj.CoreCompileInputs.cache
+C:\Users\HomeUser\Source\Repos\Visual-CShap-Projects\Fuel Economy Calculator\Fuel Economy Calculator\obj\Debug\Fuel Economy Calculator.exe
+C:\Users\HomeUser\Source\Repos\Visual-CShap-Projects\Fuel Economy Calculator\Fuel Economy Calculator\obj\Debug\Fuel Economy Calculator.pdb

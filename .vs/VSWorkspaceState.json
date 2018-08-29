@@ -1,9 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Compute BMI",
-    "\\Emperial BMI Calculator"
+    "\\Admin_Login",
+    "\\AeroplaneRunwayLenghth",
+    "\\ConsoleApp1",
+    "\\Emperial BMI Calculator",
+    "\\Federal Inome Tax Clalculator",
+    "\\Federal Inome Tax Clalculator\\Federal Inome Tax Clalculator",
+    "\\Fuel Economy Calculator",
+    "\\Fuel Economy Calculator\\Fuel Economy Calculator",
+    "\\Trapezium_Getter_Setter"
   ],
-  "SelectedNode": "\\Compute BMI\\Compute BMI.sln",
+  "SelectedNode": "\\Trapezium_Getter_Setter\\Trapezium_Getter_Setter.sln",
   "PreviewInSolutionExplorer": false
 }
