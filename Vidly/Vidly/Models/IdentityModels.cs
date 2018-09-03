@@ -1,6 +1,8 @@
 ﻿using System.Data.Entity;
+using System.Dynamic;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using Microsoft.Ajax.Utilities;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 
@@ -21,6 +23,8 @@ namespace Vidly.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public DbSet <Customer> Customers { get; set; }//Represents the customer table in our db
+        public DbSet<Movie> Movies { get; set; }
+        public DbSet <MembershipType> MembershipTypes { get; set; }
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
