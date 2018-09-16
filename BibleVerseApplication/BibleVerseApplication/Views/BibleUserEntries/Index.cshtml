@@ -1,0 +1,58 @@
+﻿@model IEnumerable<BibleVerseApplication.Models.BibleUserEntry>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Bible Verse User Entries</h2>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TestamentSelection)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BookSelection)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ChapterNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VerseNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VerseText)
+        </th>
+        <th></th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TestamentSelection)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BookSelection)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ChapterNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VerseNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VerseText)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+            </td>
+        </tr>
+    }
+
+</table>
+<p>
+    @Html.ActionLink("Create New Verse ", "Create")
+</p>
+

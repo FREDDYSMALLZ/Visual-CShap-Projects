@@ -1,0 +1,59 @@
+﻿@model BibleVerseApplication.Models.BibleUserEntry
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>BibleUserEntry</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TestamentSelection)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TestamentSelection)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BookSelection)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BookSelection)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChapterNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChapterNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VerseNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VerseNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VerseText)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VerseText)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
