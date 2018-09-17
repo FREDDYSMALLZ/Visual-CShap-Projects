@@ -49,6 +49,8 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -195,6 +197,25 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\BibleEntryController.cs" />
+    <Compile Include="Controllers\BibleModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BibleModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\BibleModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BibleModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\BibleModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BibleModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\BibleTable.cs">
+      <DependentUpon>BibleModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -217,6 +238,16 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Images\DailyBibleVerse.jpg" />
+    <Content Include="Controllers\BibleModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BibleModel.edmx</DependentUpon>
+      <LastGenOutput>BibleModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Controllers\BibleModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BibleModel.edmx</DependentUpon>
+      <LastGenOutput>BibleModel.cs</LastGenOutput>
+    </Content>
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -225,6 +256,13 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <EntityDeploy Include="Controllers\BibleModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>BibleModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Controllers\BibleModel.edmx.diagram">
+      <DependentUpon>BibleModel.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -271,8 +309,15 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\BibleEntry\Details.cshtml" />
+    <Content Include="Views\BibleEntry\BibleIndex.cshtml" />
+    <Content Include="Views\BibleEntry\Edit.cshtml" />
+    <Content Include="Views\BibleEntry\Delete.cshtml" />
+    <Content Include="Views\BibleEntry\Create.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

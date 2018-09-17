@@ -39,9 +39,65 @@ namespace BibleVerseApplication.Models
 
         [Required(ErrorMessage = "Please Enter the Verse Text from the Book and Chapter Number")]
         [Display(Name = "Verse Text")]
-        [DataType(DataType.Text)]
+        [DataType(DataType.MultilineText)]
         [StringLength(2000, MinimumLength = 4)]
         public string VerseText { get; set; }
+    }
+    public enum TestamentSelection{
+
+        OldTestament,
+        NewTestament
+
+    }
+
+    public enum BibleBookSelection
+    {
+        Genesis,
+        Exodus,
+        Leviticus,
+        Numbers,
+        Deuteronomy,
+        Joshua,
+        Judges,
+        Ruth,
+        Samuel,
+        Kings,
+        Chronicles, 
+        Ezra,
+        Nehemiah,
+        Esther,
+        Job,
+        Psalms,
+        Proverbs,
+        Ecclesiastes,
+        SongofSolomon,
+        Isaiah,
+        Jeremiah,
+        Lamentations,
+        Ezekiel,
+        Daniel,
+        Hosea,
+        Joel,
+        Amos,
+        Obadiah,
+        Jonah,
+        Micah,
+        Nahum,
+        Habakkuk,
+        Zephaniah,
+        Haggai,
+        Zechariah,
+        Malachi,
+        Matthew,
+        Mark,
+        Luke,
+        John,     
+        Romans,      
+        Galatians,
+        Ephesians,
+        Philippians,
+        Colossians,
+        Titus
     }
 
 

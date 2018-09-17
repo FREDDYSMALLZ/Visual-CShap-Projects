@@ -18,7 +18,6 @@ namespace TheBibleApplication.Models
         [Required(ErrorMessage = "Please Enter your Bible Testament")]
         [Display(Name = "Testament Selection")]
         [DataType(DataType.Text)]
-        [StringLength(50, MinimumLength = 12)]
         public string TestamentSelection { get; set; }
 
         [Required(ErrorMessage = "Please Enter your Book Selection")]
@@ -39,8 +38,14 @@ namespace TheBibleApplication.Models
 
         [Required(ErrorMessage = "Please Enter the Verse Text from the Book and Chapter Number")]
         [Display(Name = "Verse Text")]
-        [DataType(DataType.Text)]
+        [DataType(DataType.MultilineText)]
         [StringLength(2000, MinimumLength = 4)]
         public string VerseText { get; set; }
+    }
+    public enum TestamentSelection{
+
+        OldTestament,
+        NewTestament
+
     }
 }

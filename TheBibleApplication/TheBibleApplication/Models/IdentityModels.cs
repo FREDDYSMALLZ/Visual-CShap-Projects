@@ -29,5 +29,7 @@ namespace TheBibleApplication.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<TheBibleApplication.Models.BibleEntry> BibleEntries { get; set; }
     }
 }
