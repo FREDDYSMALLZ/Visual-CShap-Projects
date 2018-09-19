@@ -26,5 +26,7 @@ namespace BibleVerseApplication.Controllers
         }
     
         public virtual DbSet<BibleEntryTable> BibleEntryTables { get; set; }
+
+        public System.Data.Entity.DbSet<BibleVerseApplication.Models.Register> Registers { get; set; }
     }
 }
