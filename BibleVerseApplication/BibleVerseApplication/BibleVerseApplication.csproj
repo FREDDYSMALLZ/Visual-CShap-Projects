@@ -99,13 +99,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\AppUsers.mdf" />
-    <Content Include="App_Data\AppUsers_log.ldf">
-      <DependentUpon>AppUsers.mdf</DependentUpon>
-    </Content>
     <Content Include="App_Data\BibleDb.mdf" />
     <Content Include="App_Data\BibleDb_log.ldf">
       <DependentUpon>BibleDb.mdf</DependentUpon>
+    </Content>
+    <Content Include="App_Data\RegAndLoginDb.mdf" />
+    <Content Include="App_Data\RegAndLoginDb_log.ldf">
+      <DependentUpon>RegAndLoginDb.mdf</DependentUpon>
     </Content>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -116,6 +116,7 @@
     <Content Include="Content\Images\DailyBibleVerse.jpg" />
     <Content Include="Content\Images\home-showcase.png" />
     <Content Include="Content\Images\logo.png" />
+    <Content Include="Content\MyStylesheet.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
@@ -156,6 +157,16 @@
     </Content>
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Models\MyAdoModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MyAdoModel.edmx</DependentUpon>
+      <LastGenOutput>MyAdoModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\MyAdoModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MyAdoModel.edmx</DependentUpon>
+      <LastGenOutput>MyAdoModel.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <EntityDeploy Include="Controllers\BibleEntryModel.edmx">
@@ -165,9 +176,21 @@
     <Content Include="Controllers\BibleEntryModel.edmx.diagram">
       <DependentUpon>BibleEntryModel.edmx</DependentUpon>
     </Content>
+    <EntityDeploy Include="Models\MyAdoModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>MyAdoModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\MyAdoModel.edmx.diagram">
+      <DependentUpon>MyAdoModel.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -193,14 +216,36 @@
     </Compile>
     <Compile Include="Controllers\BibleUserEntriesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\Users.cs" />
     <Compile Include="Controllers\UsersController.cs" />
+    <Compile Include="Crypto.cs" />
+    <Compile Include="Models\Extended\User.cs" />
     <Compile Include="Models\Login.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\BibleUserEntry.cs" />
     <Compile Include="Models\BibleVerseApplicationContext.cs" />
+    <Compile Include="Models\MyAdoModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MyAdoModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MyAdoModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MyAdoModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MyAdoModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MyAdoModel.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Models\Register.cs" />
+    <Compile Include="Models\User.cs">
+      <DependentUpon>MyAdoModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UserLogin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -218,7 +263,8 @@
     <Content Include="Views\BibleUserEntries\Edit.cshtml" />
     <Content Include="Views\BibleUserEntries\Index.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Users\Register.cshtml" />
+    <Content Include="Views\Users\Registration.cshtml" />
+    <Content Include="Views\Users\VerifyAccount.cshtml" />
     <Content Include="Views\Users\Login.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

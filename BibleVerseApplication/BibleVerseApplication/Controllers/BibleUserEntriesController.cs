@@ -32,6 +32,7 @@ namespace BibleVerseApplication.Controllers
         }
 
         // GET: BibleUserEntries/Create
+        [Authorize]
         public ActionResult Create()
         {
             return View();
