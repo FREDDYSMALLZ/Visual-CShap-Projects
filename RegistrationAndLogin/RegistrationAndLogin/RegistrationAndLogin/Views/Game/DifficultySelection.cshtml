@@ -1,0 +1,25 @@
+﻿@model RegistrationAndLogin.Models.Difficulty
+
+@{
+    ViewBag.Title = "DifficultySelection";
+}
+
+<h2>DifficultySelection</h2>
+@using (Html.BeginForm("GameDisplay", "Game"))
+{
+    @Html.RadioButtonFor(d => d.GameDifficulty, 1)<span> : Easy</span>
+    <br />
+    @Html.RadioButtonFor(d => d.GameDifficulty, 2)<span> : Medium</span>
+    <br />
+    @Html.RadioButtonFor(d => d.GameDifficulty, 3)<span> : Hard</span>
+    <br />
+    <input type = "submit" value = "Play Game" />
+}
+
+
+@*<br />
+    @Html.ActionLink("Easy", "GameDisplay")
+    <br />
+    @Html.ActionLink("Medium", "GameDisplay")
+    <br />
+    @Html.ActionLink("Hard", "GameDisplay")*@

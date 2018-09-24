@@ -160,9 +160,6 @@ namespace BibleVerseApplication.Controllers
             FormsAuthentication.SignOut();
             return RedirectToAction("Login", "Users");
         }
-
-
-
         [NonAction]
         public bool IsEmailExist(string emailId)
         {
