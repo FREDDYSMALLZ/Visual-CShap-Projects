@@ -13,7 +13,6 @@ namespace BibleVerseApplication.Controllers
     public class UsersController : Controller
     {
         // Register Action
-        [Authorize]
         [HttpGet]
         public ActionResult Registration()
         {
@@ -158,7 +157,7 @@ namespace BibleVerseApplication.Controllers
         public ActionResult LogOut()
         {
             FormsAuthentication.SignOut();
-            return RedirectToAction("Login", "Users");
+            return RedirectToAction("Index", "Home");
         }
         [NonAction]
         public bool IsEmailExist(string emailId)

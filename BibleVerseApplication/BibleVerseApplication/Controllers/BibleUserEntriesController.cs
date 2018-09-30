@@ -53,7 +53,6 @@ namespace BibleVerseApplication.Controllers
             return View(bibleUserEntry);
         }
 
-        // GET: BibleUserEntries/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -67,8 +66,6 @@ namespace BibleVerseApplication.Controllers
             }
             return View(bibleUserEntry);
         }
-
-        // POST: BibleUserEntries/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit(BibleUserEntry bibleUserEntry)
@@ -81,8 +78,6 @@ namespace BibleVerseApplication.Controllers
             }
             return View(bibleUserEntry);
         }
-
-        // GET: BibleUserEntries/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
@@ -96,8 +91,6 @@ namespace BibleVerseApplication.Controllers
             }
             return View(bibleUserEntry);
         }
-
-        // POST: BibleUserEntries/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)

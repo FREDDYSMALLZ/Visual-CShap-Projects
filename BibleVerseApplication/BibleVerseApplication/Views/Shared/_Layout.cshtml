@@ -9,15 +9,16 @@
     <script src="~/Scripts/modernizr-2.6.2.js"></script>
 </head>
 <body>
-<div id="header">
-    <h1><a href="/">ASP.NET MVC BIBLE APPLICATION </a></h1>
-    <ul id="navlist">
-        <li class="first"><a href="@Url.Content("~/Home/Index")" id="current">Home</a></li>
-        <li><a href="@Url.Content("~/BibleUserEntries/Create")">Bible Verse Entry</a></li>
-        <li><a href="@Url.Content("~/Users/Registration")">Register</a></li>
-        <li><a href="@Url.Content("~/Users/Login")">Login</a></li>
-    </ul>
-</div>
+    <div id="header">
+        <h1><a href="/">ASP.NET MVC BIBLE APPLICATION </a></h1>
+        <ul id="navlist">
+            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+            <li>@Html.ActionLink("Bible Verse Entry", "Create", "BibleUserEntries")</li>
+            <li>@Html.ActionLink("Search Verse", "Search", "BibleUserEntries")</li>
+            <li>@Html.Partial("_LoginPartial")</li>
+        </ul>
+        
+    </div>
 
     <div class="container body-content">
         @RenderBody()
@@ -29,5 +30,6 @@
 
     <script src="~/Scripts/jquery-1.10.2.min.js"></script>
     <script src="~/Scripts/bootstrap.min.js"></script>
+    @RenderSection("scripts", required: false)
 </body>
 </html>

@@ -6,11 +6,3 @@
 
 }
 <h1>This is the Index Page</h1>
-Welcome @HttpContext.Current.User.Identity.Name
-@if (Request.IsAuthenticated)
-{
-    using (Html.BeginForm("LogOut", "Users", FormMethod.Post, new { id = "logoutForm" }))
-    {
-        <a href="javascript:document.getElementById('logoutForm').submit()">Logout</a>
-    }
-}
