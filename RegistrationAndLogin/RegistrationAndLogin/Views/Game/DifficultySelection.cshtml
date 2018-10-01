@@ -4,7 +4,8 @@
     ViewBag.Title = "DifficultySelection";
 }
 
-<h2>DifficultySelection</h2>
+<h2>Welcome to the Game Difficulty Selection Page</h2>
+<h4>Please Select the Game Level that you want to Play</h4>
 @using (Html.BeginForm("GameDisplay", "Game"))
 {
     @Html.RadioButtonFor(d => d.GameDifficulty, 1)<span> : Easy</span>
@@ -15,11 +16,3 @@
     <br />
     <input type = "submit" value = "Play Game" />
 }
-
-
-@*<br />
-    @Html.ActionLink("Easy", "GameDisplay")
-    <br />
-    @Html.ActionLink("Medium", "GameDisplay")
-    <br />
-    @Html.ActionLink("Hard", "GameDisplay")*@

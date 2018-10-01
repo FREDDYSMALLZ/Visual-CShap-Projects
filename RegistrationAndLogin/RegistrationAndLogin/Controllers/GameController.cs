@@ -5,7 +5,6 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-
 namespace RegistrationAndLogin.Controllers
 {
     public class GameController : Controller
@@ -22,11 +21,19 @@ namespace RegistrationAndLogin.Controllers
             return View();
         }
 
+        public GameBoard GameBoard;
+        
         public ActionResult GameDisplay(Difficulty difficulty)
         {
-            GameLogicController logicController = new GameLogicController(difficulty.GameDifficulty * 10);
+            InitializeGameBoard(difficulty.GameDifficulty);
+            
+            return View(GameBoard);
+        }
 
-            return View();
+        private void InitializeGameBoard(int difficulty)
+        {
+            GameBoard = new GameBoard(difficulty * 10);
+            GameBoardController gBController = new GameBoardController(GameBoard);
         }
     }
 }

@@ -10,8 +10,8 @@ using System.Web.Security;
 using RegistrationAndLogin.Models;
 namespace RegistrationAndLogin.Controllers
 {
-    public class UserController : Controller
-    {
+	public class UserController : Controller
+	{
 		[HttpGet]
 		public ActionResult Registration()
 		{
@@ -102,7 +102,7 @@ namespace RegistrationAndLogin.Controllers
 		}
 		//login post
 		[HttpPost]
-        [ValidateAntiForgeryToken]
+		[ValidateAntiForgeryToken]
 		public ActionResult Login(UserLogin login, string ReturnUrl = "")
 		{
 			string message = "";
@@ -152,7 +152,7 @@ namespace RegistrationAndLogin.Controllers
 		//logout
 		[Authorize]
 		
-		public ActionResult Logout()
+		public ActionResult LogOut()
 		{
 			FormsAuthentication.SignOut();
 			return RedirectToAction("Login", "User");
@@ -200,10 +200,10 @@ namespace RegistrationAndLogin.Controllers
 				smtp.Send(message);
 		}
 
-        public ActionResult PlayGame()
-        {
-            return RedirectToAction("DifficultySelection", "Game");
-        }
+		public ActionResult PlayGame()
+		{
+			return RedirectToAction("DifficultySelection", "Game");
+		}
 
 	}
 }
