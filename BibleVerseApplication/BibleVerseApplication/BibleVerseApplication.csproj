@@ -208,6 +208,7 @@
     </Compile>
     <Compile Include="Controllers\BibleUserEntriesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\SearchVerseController.cs" />
     <Compile Include="Controllers\Users.cs" />
     <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="Crypto.cs" />
@@ -259,6 +260,8 @@
     <Content Include="Views\Users\VerifyAccount.cshtml" />
     <Content Include="Views\Users\Login.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\SearchVerse\Details.cshtml" />
+    <Content Include="Views\SearchVerse\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

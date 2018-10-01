@@ -1,0 +1,77 @@
+﻿@model IEnumerable<BibleVerseApplication.Models.BibleUserEntry>
+
+@{
+    ViewBag.Title = "Search";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Welcome to your favorite Bible Verse Search Page</h2>
+<h4>Please Select the Search Criteria to begin your search</h4>
+<div style="font-family: sans-serif">
+    <p>
+    @using (Html.BeginForm("Index", "SearchVerse", FormMethod.Get))
+    {
+        <b>Search By:</b>
+        <b>@Html.RadioButton("SearchBy", "Testament") <text>Testament</text></b>
+        <b>@Html.RadioButton("SearchBy", "BookName", true ) <text>Book Name</text></b>
+        @Html.TextBox("Search") <input type="submit" value="Search"/>
+    }
+    </p>
+
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TestamentSelection)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BookSelection)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ChapterNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VerseNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VerseText)
+            </th>
+            <th></th>
+        </tr>
+        @if (!Model.Any())
+        {
+            <tr>
+                <td colspan="5">No Data Matches your Search Criteria</td>
+            </tr>
+
+        }
+        else
+        {
+
+
+            foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TestamentSelection)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.BookSelection)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ChapterNumber)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.VerseNumber)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.VerseText)
+                    </td>                   
+                </tr>
+            }
+        }
+
+    </table>
+    <p>
+        @Html.ActionLink("Back to Search Records", "Index")
+    </p>
+</div>
