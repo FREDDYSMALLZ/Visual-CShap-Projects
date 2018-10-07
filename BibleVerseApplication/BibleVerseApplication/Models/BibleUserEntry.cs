@@ -3,7 +3,7 @@ using System.Web.Mvc;
 
 namespace BibleVerseApplication.Models
 {
-    [Bind(Exclude = "Id")]
+    [Bind(Include = "Id")]
     public class BibleUserEntry
     {
 
